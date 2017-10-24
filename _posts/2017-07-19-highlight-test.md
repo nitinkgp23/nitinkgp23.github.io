@@ -15,6 +15,8 @@ alert('Hello World!');
 
     print 'helloworld'
 
+<!-- more -->
+
 # Highlight block
 
 ```javascript
