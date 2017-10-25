@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-25T04:57:27+05:30</updated><id>http://localhost:4000/</id><title type="html">Blogs, Tutorials and Musings</title><subtitle>Indian Institute of Technology, Kharagpur</subtitle><author><name>anomaly_</name></author><entry><title type="html">Next Theme Tutorial</title><link href="http://localhost:4000/tutorial/2017/07/20/next-tutorial/" rel="alternate" type="text/html" title="Next Theme Tutorial" /><published>2017-07-20T00:00:00+05:30</published><updated>2017-07-20T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/07/20/next-tutorial</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/07/20/next-tutorial/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-25T19:58:12+05:30</updated><id>http://localhost:4000/</id><title type="html">Blogs, Tutorials and Musings</title><subtitle>Indian Institute of Technology, Kharagpur</subtitle><author><name>anomaly_</name></author><entry><title type="html">Next Theme Tutorial</title><link href="http://localhost:4000/tutorial/2017/07/20/next-tutorial/" rel="alternate" type="text/html" title="Next Theme Tutorial" /><published>2017-07-20T00:00:00+05:30</published><updated>2017-07-20T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/07/20/next-tutorial</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/07/20/next-tutorial/">&lt;blockquote&gt;
   &lt;p&gt;NexT is a high quality elegant &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme ported from &lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot;&gt;Hexo Next&lt;/a&gt;. It is crafted from scratch, with love.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -221,7 +221,63 @@ Next use &lt;code class=&quot;highlighter-rouge&quot;&gt;normal&lt;/code&gt; by 
   &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>anomaly_</name></author><summary type="html">This is a highlight test. Normal block alert('Hello World!'); print 'helloworld'</summary></entry><entry><title type="html">Emoji Test</title><link href="http://localhost:4000/2015/09/19/emoji-test/" rel="alternate" type="text/html" title="Emoji Test" /><published>2015-09-19T00:00:00+05:30</published><updated>2015-09-19T00:00:00+05:30</updated><id>http://localhost:4000/2015/09/19/emoji-test</id><content type="html" xml:base="http://localhost:4000/2015/09/19/emoji-test/">&lt;p&gt;This is an emoji test. :smile: lol.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>anomaly_</name></author><summary type="html">This is a highlight test. Normal block alert('Hello World!'); print 'helloworld'</summary></entry><entry><title type="html">Home automation</title><link href="http://localhost:4000/tutorial/2017/03/04/home-automation/" rel="alternate" type="text/html" title="Home automation" /><published>2017-03-04T00:00:00+05:30</published><updated>2017-03-04T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/03/04/home-automation</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/03/04/home-automation/">&lt;p&gt;Lying on the bed, just before dozing off to sleep every night, I wondered how wonderful it would be if my roomie would get up from his bed and switch off the tubelight for me. Ohh, throwing all sort of tantrums and tempting offers to my roomies to make them get up from bed for me was hell of a job. Sometimes I would succeed, but mostly, I would have to get out from the quilt, in shivering cold, and trouble my legs to walk a 3 metre distance to turn off the switch.&lt;/p&gt;
+
+&lt;p&gt;And then, I came across this wonderful thing called Arduino. A bit of googling, and I was ready to automate my tubelights and fans, so that I would control them from my mobile phone itself. No more tantrums and no more trouble to my legs. I was glad.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Here is a detailed explanation of what I used, and the steps required to automate your room!&lt;/p&gt;
+
+&lt;h2 id=&quot;required&quot;&gt;Required&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Arduino UNO  (Purchase here)&lt;/li&gt;
+  &lt;li&gt;Bluetooth Module (Purchase here)&lt;/li&gt;
+  &lt;li&gt;Breadboard / PCB board&lt;/li&gt;
+  &lt;li&gt;Wires , Jumper wires&lt;/li&gt;
+  &lt;li&gt;12 V relay (1 relay for each device you want to control)&lt;/li&gt;
+  &lt;li&gt;12 V adapter&lt;/li&gt;
+  &lt;li&gt;TIP 122 transistor&lt;/li&gt;
+  &lt;li&gt;Android phone&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This blog won’t explain the theoretical reasons behind each of the steps, or the working of Arduino or anything that is of no use in the project. It just serves as a guide to the steps you need to follow, to build a home automated system. A little knowledge about how circuits work will suffice.&lt;/p&gt;
+
+&lt;p&gt;This is an Arduino UNO board. There are 14 digital I/O pins, and 6 analog inputs, 3 GND pins, a 3.3 V and a 5 V pin. We will be using pin 13 for controlling the appliance, pin 1 and pin 0 will be used for connecting to the bluetooth module, and 5 V pin will be used to power the bluetooth module. GND pins will be used for connecting to the ground.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/nitinkgp23/nitinkgp23.github.io/blob/master/assets/images/posts/home-automation/48912-arduinouno_r3_front.jpg&quot; alt=&quot;Arduino&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is HC-05 bluetooth module, which will be used for communicating through the mobile device. It will have the usual range of 10 m, but if you want to have a higher range, you can look at other modules available online.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/nitinkgp23/nitinkgp23.github.io/blob/master/assets/images/posts/home-automation/134883010_14170929051_large1.jpg&quot; alt=&quot;HC-05 bluetooth module&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The module that you have bought might consist of 6 pins, but we will be using only 4 pins that lie in the middle, labelled VCC, GND, TX and RX. An important thing to note here is that, TX pins have to be connected at 3.3 V Level, whereas the power required in the bluetooth module is 3.6-6 V. Hence, we have to use the 5 V pin from the arduino to power the module, and divide the voltage and drop it down to 3.3 V, so that bluetooth module doesn’t get cooked up.&lt;/p&gt;
+
+&lt;p&gt;Here is how a connection should be made between arduino and the bluetooth module :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/nitinkgp23/nitinkgp23.github.io/blob/master/assets/images/posts/home-automation/134883010_14170929051_large1.jpg&quot; alt=&quot;Connecting arduino and bluetooth&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Points to be noted:&lt;/p&gt;
+
+&lt;p&gt;RX pin of the module connects to TX pin of the arduino and vice-versa.
+TX pin of the module works at not more than 3.3 V level, hence a voltage-divider circuit is used, where 1/3 * 5 V goes to the GND, whereas only 2/3 * 5 V is used up in the RX pin of the arduino.
+Connect GND of the module to any of the GND pins on the arduino board.
+Connect VCC of the module to 5 V pin of the arduino board.
+Controlling a LED by bluetooth:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/nitinkgp23/nitinkgp23.github.io/blob/master/assets/images/posts/home-automation/screenshot-from-2017-01-17-17-09-55.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make the above connection. The above diagram only shows how to make the connection. You are free to connect the LED and wires through PCB board or breadboard. Use a proper resistor according to the LED you are using.&lt;/p&gt;
+
+&lt;p&gt;A 220 ohm resistor for a red LED will be okay, if you are connecting the arduino by USB,&lt;/p&gt;
+
+&lt;p&gt;Uploading the code to Arduino board :&lt;/p&gt;
+
+&lt;p&gt;First of all, download Arduino IDE from here. Follow the instructions and install the IDE. Connect the arduino board to computer, and upload the following code to the board. Google a bit on how to use the Arduino IDE, and how to upload a code. While uploading, make sure you have disconnected the RX and TX pins from the bluetooth module, otherwise an error will flash up. After the code has uploaded successfully, reconnect the RX and TX pins.&lt;/p&gt;
+
+&lt;p&gt;Downloading the app from play store :&lt;/p&gt;
+
+&lt;p&gt;Download this app from Google Play Store (Arduino bluetooth control , by Guiming Apps), and install it in your android phone.&lt;/p&gt;</content><author><name>anomaly_</name></author><category term="arduino" /><category term="automation" /><summary type="html">Lying on the bed, just before dozing off to sleep every night, I wondered how wonderful it would be if my roomie would get up from his bed and switch off the tubelight for me. Ohh, throwing all sort of tantrums and tempting offers to my roomies to make them get up from bed for me was hell of a job. Sometimes I would succeed, but mostly, I would have to get out from the quilt, in shivering cold, and trouble my legs to walk a 3 metre distance to turn off the switch. And then, I came across this wonderful thing called Arduino. A bit of googling, and I was ready to automate my tubelights and fans, so that I would control them from my mobile phone itself. No more tantrums and no more trouble to my legs. I was glad.</summary></entry><entry><title type="html">Emoji Test</title><link href="http://localhost:4000/2015/09/19/emoji-test/" rel="alternate" type="text/html" title="Emoji Test" /><published>2015-09-19T00:00:00+05:30</published><updated>2015-09-19T00:00:00+05:30</updated><id>http://localhost:4000/2015/09/19/emoji-test</id><content type="html" xml:base="http://localhost:4000/2015/09/19/emoji-test/">&lt;p&gt;This is an emoji test. :smile: lol.&lt;/p&gt;
 
 &lt;p&gt;See emoji cheat sheet for more detail :wink: : &lt;a href=&quot;https://www.webpagefx.com/tools/emoji-cheat-sheet/&quot;&gt;https://www.webpagefx.com/tools/emoji-cheat-sheet/&lt;/a&gt;.&lt;/p&gt;
 
@@ -384,18 +440,4 @@ underscores with a backslash like so &lt;code class=&quot;highlighter-rouge&quot
 
 &lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;http://lipsum.sugutsukaeru.jp/index.cgi&quot;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name>anomaly_</name></author><summary type="html">This is a Japanese test post. 私は昨日ついにその助力家というのの上よりするたなけれ。 最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。 がたを知っないはずも同時に九月をいよいよたありた。 もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。 それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。 この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。 From すぐ使えるダミーテキスト - 日本語 Lorem ipsum</summary></entry><entry><title type="html">中文測試</title><link href="http://localhost:4000/test/test/2013/12/25/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/" rel="alternate" type="text/html" title="中文測試" /><published>2013-12-25T05:01:30+05:30</published><updated>2013-12-25T05:01:30+05:30</updated><id>http://localhost:4000/test/test/2013/12/25/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6</id><content type="html" xml:base="http://localhost:4000/test/test/2013/12/25/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/">&lt;p&gt;This is a Chinese test post.&lt;/p&gt;
-
-&lt;p&gt;善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。&lt;/p&gt;
-
-&lt;p&gt;以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？&lt;/p&gt;
-
-&lt;p&gt;就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。&lt;/p&gt;
-
-&lt;p&gt;國新故。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;http://www.richyli.com/tool/loremipsum/&quot;&gt;亂數假文產生器 - Chinese Lorem Ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name>anomaly_</name></author><summary type="html">This is a Chinese test post. 善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。 以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？ 就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。 國新故。 工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？ From 亂數假文產生器 - Chinese Lorem Ipsum</summary></entry></feed>
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;http://lipsum.sugutsukaeru.jp/index.cgi&quot;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name>anomaly_</name></author><summary type="html">This is a Japanese test post. 私は昨日ついにその助力家というのの上よりするたなけれ。 最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。 がたを知っないはずも同時に九月をいよいよたありた。 もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。 それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。 この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。 From すぐ使えるダミーテキスト - 日本語 Lorem ipsum</summary></entry></feed>
