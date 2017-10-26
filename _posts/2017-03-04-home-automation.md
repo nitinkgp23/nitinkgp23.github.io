@@ -45,7 +45,7 @@ Here is how a connection should be made between arduino and the bluetooth module
 
 ![Connecting arduino and bluetooth](https://github.com/nitinkgp23/nitinkgp23.github.io/blob/master/assets/images/posts/home-automation/134883010_14170929051_large1.jpg)
 
-Points to be noted:
+#### Points to be noted:
 
 RX pin of the module connects to TX pin of the arduino and vice-versa.
 TX pin of the module works at not more than 3.3 V level, hence a voltage-divider circuit is used, where 1/3 * 5 V goes to the GND, whereas only 2/3 * 5 V is used up in the RX pin of the arduino.
@@ -59,10 +59,10 @@ Make the above connection. The above diagram only shows how to make the connecti
 
 A 220 ohm resistor for a red LED will be okay, if you are connecting the arduino by USB,
 
-Uploading the code to Arduino board :
+#### Uploading the code to Arduino board :
 
 First of all, download Arduino IDE from here. Follow the instructions and install the IDE. Connect the arduino board to computer, and upload the following code to the board. Google a bit on how to use the Arduino IDE, and how to upload a code. While uploading, make sure you have disconnected the RX and TX pins from the bluetooth module, otherwise an error will flash up. After the code has uploaded successfully, reconnect the RX and TX pins.
 
-Downloading the app from play store :
+#### Downloading the app from play store :
 
 Download [this](https://play.google.com/store/apps/details?id=com.app.control&hl=en) app from Google Play Store (Arduino bluetooth control , by Guiming Apps), and install it in your android phone.
