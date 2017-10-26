@@ -65,4 +65,4 @@ First of all, download Arduino IDE from here. Follow the instructions and instal
 
 Downloading the app from play store :
 
-Download this app from Google Play Store (Arduino bluetooth control , by Guiming Apps), and install it in your android phone.
+Download [this](https://play.google.com/store/apps/details?id=com.app.control&hl=en) app from Google Play Store (Arduino bluetooth control , by Guiming Apps), and install it in your android phone.
