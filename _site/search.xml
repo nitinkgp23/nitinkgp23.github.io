@@ -2,6 +2,105 @@
 <search>
   
     <entry>
+      <title><![CDATA[How I Got Started With Docker]]></title>
+      <url>/2017/10/30/how-i-got-started-with-docker/</url>
+      <content type="html"><![CDATA[
+]]></content>
+      <categories>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Getting started with Go]]></title>
+      <url>/tutorial/2017/10/29/getting-started-with-go/</url>
+      <content type="html"><![CDATA[<p>This tutorial walks through how I installed Go, and how I got started with it. I will keep on updating it, through my journey of learning Go.</p>
+
+<h1 id="installation">Installation</h1>
+
+<ol>
+  <li>Retrieve the tarball using <code class="highlighter-rouge">curl</code> by the following command:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
+</code></pre></div>    </div>
+  </li>
+  <li>Next, use <code class="highlighter-rouge">tar</code> to extract the tarball :
+ (Here <code class="highlighter-rouge">x</code> tells it to extract, <code class="highlighter-rouge">v</code> denotes verbose output and <code class="highlighter-rouge">f</code> denotes that we are mentioning a file name.)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tar xvf go1.6.linux-amd64.tar.gz
+</code></pre></div>    </div>
+  </li>
+  <li>This creates a directory go in the home directory. We recursively change Go’s owner and group to root and move it to <code class="highlighter-rouge">usr/local</code> :
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo chown -R root:root ./go
+ sudo mv go /usr/local
+</code></pre></div>    </div>
+    <p>(<code class="highlighter-rouge">usr/local/go</code> is the offical recommended location.)</p>
+  </li>
+  <li>
+    <p>Setting up paths :</p>
+
+    <p>At the end of the file <code class="highlighter-rouge">~/.profile</code>, add the following lines:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export GOPATH=$HOME/work/go
+ export PATH=$PATH:/usr/local/bin:$GOPATH/bin
+</code></pre></div>    </div>
+    <p>GOPATH contains the path of the folder where you will write all your Go programs. After saving the file, refresh it by doing:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> source ~/.profile
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>This completes our installation process.</p>
+
+<h1 id="writing-hello-world-program">Writing “Hello World” program</h1>
+
+<ol>
+  <li>Create a working directory (which you added in the .profile as GOPATH) :
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> mkdir -p work/go/src/hello
+</code></pre></div>    </div>
+  </li>
+  <li>Create a simple Hello world file inside the above dir:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> nano ~/work/go/src/hello/hello.go
+</code></pre></div>    </div>
+
+    <p>Inside the editor, paste the code below:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">package</span> <span class="n">main</span>
+
+ <span class="n">import</span> <span class="s2">"fmt"</span>
+
+ <span class="n">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+     <span class="n">fmt</span><span class="p">.</span><span class="n">Printf</span><span class="p">(</span><span class="s2">"hello, world</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Compile the above code using <code class="highlighter-rouge">install</code> command:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> go install work/go/src/hello
+</code></pre></div>    </div>
+    <p>This will create a binary in the dir <code class="highlighter-rouge">work/go/bin</code></p>
+  </li>
+  <li>Execute this by just typing
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> hello
+</code></pre></div>    </div>
+    <p>since it is already added in the path.</p>
+  </li>
+</ol>
+]]></content>
+      <categories>
+        
+          <category> tutorial </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> go </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Next Theme Tutorial]]></title>
       <url>/tutorial/2017/07/20/next-tutorial/</url>
       <content type="html"><![CDATA[<blockquote>

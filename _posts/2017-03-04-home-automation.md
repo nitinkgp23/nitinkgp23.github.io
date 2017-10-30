@@ -7,6 +7,7 @@ categories:
 tags:
  - arduino
  - automation
+comments: true
 ---
 
 

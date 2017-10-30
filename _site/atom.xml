@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-25T19:58:12+05:30</updated><id>http://localhost:4000/</id><title type="html">Blogs, Tutorials and Musings</title><subtitle>Indian Institute of Technology, Kharagpur</subtitle><author><name>anomaly_</name></author><entry><title type="html">Next Theme Tutorial</title><link href="http://localhost:4000/tutorial/2017/07/20/next-tutorial/" rel="alternate" type="text/html" title="Next Theme Tutorial" /><published>2017-07-20T00:00:00+05:30</published><updated>2017-07-20T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/07/20/next-tutorial</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/07/20/next-tutorial/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-30T22:54:47+05:30</updated><id>http://localhost:4000/</id><title type="html">Blogs, Tutorials and Musings</title><subtitle>Indian Institute of Technology, Kharagpur</subtitle><author><name>anomaly_</name></author><entry><title type="html">How I Got Started With Docker</title><link href="http://localhost:4000/2017/10/30/how-i-got-started-with-docker/" rel="alternate" type="text/html" title="How I Got Started With Docker" /><published>2017-10-30T00:00:00+05:30</published><updated>2017-10-30T00:00:00+05:30</updated><id>http://localhost:4000/2017/10/30/how-i-got-started-with-docker</id><content type="html" xml:base="http://localhost:4000/2017/10/30/how-i-got-started-with-docker/"></content><author><name>anomaly_</name></author><summary type="html"></summary></entry><entry><title type="html">Getting started with Go</title><link href="http://localhost:4000/tutorial/2017/10/29/getting-started-with-go/" rel="alternate" type="text/html" title="Getting started with Go" /><published>2017-10-29T00:00:00+05:30</published><updated>2017-10-29T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/10/29/getting-started-with-go</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/10/29/getting-started-with-go/">&lt;p&gt;This tutorial walks through how I installed Go, and how I got started with it. I will keep on updating it, through my journey of learning Go.&lt;/p&gt;
+
+&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Retrieve the tarball using &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; by the following command:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Next, use &lt;code class=&quot;highlighter-rouge&quot;&gt;tar&lt;/code&gt; to extract the tarball :
+ (Here &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; tells it to extract, &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; denotes verbose output and &lt;code class=&quot;highlighter-rouge&quot;&gt;f&lt;/code&gt; denotes that we are mentioning a file name.)
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; tar xvf go1.6.linux-amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This creates a directory go in the home directory. We recursively change Go’s owner and group to root and move it to &lt;code class=&quot;highlighter-rouge&quot;&gt;usr/local&lt;/code&gt; :
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo chown -R root:root ./go
+ sudo mv go /usr/local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;(&lt;code class=&quot;highlighter-rouge&quot;&gt;usr/local/go&lt;/code&gt; is the offical recommended location.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setting up paths :&lt;/p&gt;
+
+    &lt;p&gt;At the end of the file &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt;, add the following lines:&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; export GOPATH=$HOME/work/go
+ export PATH=$PATH:/usr/local/bin:$GOPATH/bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;GOPATH contains the path of the folder where you will write all your Go programs. After saving the file, refresh it by doing:&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; source ~/.profile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This completes our installation process.&lt;/p&gt;
+
+&lt;h1 id=&quot;writing-hello-world-program&quot;&gt;Writing “Hello World” program&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a working directory (which you added in the .profile as GOPATH) :
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; mkdir -p work/go/src/hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a simple Hello world file inside the above dir:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; nano ~/work/go/src/hello/hello.go
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Inside the editor, paste the code below:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+
+ &lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
+
+ &lt;span class=&quot;n&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello, world&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Compile the above code using &lt;code class=&quot;highlighter-rouge&quot;&gt;install&lt;/code&gt; command:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; go install work/go/src/hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;This will create a binary in the dir &lt;code class=&quot;highlighter-rouge&quot;&gt;work/go/bin&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Execute this by just typing
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;since it is already added in the path.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>anomaly_</name></author><category term="go" /><summary type="html">This tutorial walks through how I installed Go, and how I got started with it. I will keep on updating it, through my journey of learning Go. Installation Retrieve the tarball using curl by the following command: curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz Next, use tar to extract the tarball : (Here x tells it to extract, v denotes verbose output and f denotes that we are mentioning a file name.) tar xvf go1.6.linux-amd64.tar.gz This creates a directory go in the home directory. We recursively change Go’s owner and group to root and move it to usr/local : sudo chown -R root:root ./go sudo mv go /usr/local (usr/local/go is the offical recommended location.) Setting up paths : At the end of the file ~/.profile, add the following lines: export GOPATH=$HOME/work/go export PATH=$PATH:/usr/local/bin:$GOPATH/bin GOPATH contains the path of the folder where you will write all your Go programs. After saving the file, refresh it by doing: source ~/.profile This completes our installation process. Writing “Hello World” program Create a working directory (which you added in the .profile as GOPATH) : mkdir -p work/go/src/hello Create a simple Hello world file inside the above dir: nano ~/work/go/src/hello/hello.go Inside the editor, paste the code below: package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;hello, world\n&quot;) } Compile the above code using install command: go install work/go/src/hello This will create a binary in the dir work/go/bin Execute this by just typing hello since it is already added in the path.</summary></entry><entry><title type="html">Next Theme Tutorial</title><link href="http://localhost:4000/tutorial/2017/07/20/next-tutorial/" rel="alternate" type="text/html" title="Next Theme Tutorial" /><published>2017-07-20T00:00:00+05:30</published><updated>2017-07-20T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/07/20/next-tutorial</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/07/20/next-tutorial/">&lt;blockquote&gt;
   &lt;p&gt;NexT is a high quality elegant &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme ported from &lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot;&gt;Hexo Next&lt;/a&gt;. It is crafted from scratch, with love.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -382,62 +449,4 @@ underscores with a backslash like so &lt;code class=&quot;highlighter-rouge&quot
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.&lt;/p&gt;
 
-&lt;p&gt;Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.&lt;/p&gt;</content><author><name>anomaly_</name></author><summary type="html">The following contents should be invisible in home/archive page.</summary></entry><entry><title type="html">Block</title><link href="http://localhost:4000/foo/2013/12/25/block/" rel="alternate" type="text/html" title="Block" /><published>2013-12-25T05:44:39+05:30</published><updated>2013-12-25T05:44:39+05:30</updated><id>http://localhost:4000/foo/2013/12/25/block</id><content type="html" xml:base="http://localhost:4000/foo/2013/12/25/block/">&lt;p&gt;This post is used for testing tag plugins. See &lt;a href=&quot;http://zespia.tw/hexo/docs/tag-plugins.html&quot;&gt;docs&lt;/a&gt; for more info.&lt;/p&gt;
-
-&lt;h2 id=&quot;block-quote&quot;&gt;Block Quote&lt;/h2&gt;
-
-&lt;h3 id=&quot;normal-blockquote&quot;&gt;Normal blockquote&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;code-block&quot;&gt;Code Block&lt;/h2&gt;
-
-&lt;h3 id=&quot;inline-code-block&quot;&gt;Inline code block&lt;/h3&gt;
-
-&lt;p&gt;This is a inline code block: &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;print 'helloworld'&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;normal-code-block&quot;&gt;Normal code block&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alert('Hello World!');
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print &quot;Hello world&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;highlight-code-block&quot;&gt;Highlight code block&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello world&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;gist&quot;&gt;Gist&lt;/h3&gt;
-
-&lt;script src=&quot;https://gist.github.com/996818.js&quot;&gt; &lt;/script&gt;</content><author><name>anomaly_</name></author><summary type="html">This post is used for testing tag plugins. See docs for more info. Block Quote Normal blockquote Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna. Code Block Inline code block This is a inline code block: python, print 'helloworld'. Normal code block alert('Hello World!'); print &quot;Hello world&quot; Highlight code block print &quot;Hello world&quot; def foo puts 'foo' end 1 2 3 def foo puts 'foo' end Gist</summary></entry><entry><title type="html">日本語テスト</title><link href="http://localhost:4000/2013/12/25/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/" rel="alternate" type="text/html" title="日本語テスト" /><published>2013-12-25T05:03:26+05:30</published><updated>2013-12-25T05:03:26+05:30</updated><id>http://localhost:4000/2013/12/25/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88</id><content type="html" xml:base="http://localhost:4000/2013/12/25/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/">&lt;p&gt;This is a Japanese test post.&lt;/p&gt;
-
-&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。&lt;/p&gt;
-
-&lt;p&gt;最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。&lt;/p&gt;
-
-&lt;p&gt;がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
-
-&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;http://lipsum.sugutsukaeru.jp/index.cgi&quot;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name>anomaly_</name></author><summary type="html">This is a Japanese test post. 私は昨日ついにその助力家というのの上よりするたなけれ。 最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。 がたを知っないはずも同時に九月をいよいよたありた。 もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。 それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。 この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。 From すぐ使えるダミーテキスト - 日本語 Lorem ipsum</summary></entry></feed>
+&lt;p&gt;Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.&lt;/p&gt;</content><author><name>anomaly_</name></author><summary type="html">The following contents should be invisible in home/archive page.</summary></entry></feed>
