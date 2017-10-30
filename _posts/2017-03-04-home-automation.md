@@ -13,10 +13,9 @@ comments: true
 
 
 Lying on the bed, just before dozing off to sleep every night, I wondered how wonderful it would be if my roomie would get up from his bed and switch off the tubelight for me. Ohh, throwing all sort of tantrums and tempting offers to my roomies to make them get up from bed for me was hell of a job. Sometimes I would succeed, but mostly, I would have to get out from the quilt, in shivering cold, and trouble my legs to walk a 3 metre distance to turn off the switch.
-
+<!-- more -->
 And then, I came across this wonderful thing called Arduino. A bit of googling, and I was ready to automate my tubelights and fans, so that I would control them from my mobile phone itself. No more tantrums and no more trouble to my legs. I was glad.
 
-<!-- more -->
 Here is a detailed explanation of what I used, and the steps required to automate your room!
 
 ## Required

@@ -1,19 +1,19 @@
 ---
-title: Block
-date: 2013-12-25 00:14:39
+title: Theme posts
+date: 2013-12-24 23:30:04
+link: http://www.google.com/
 categories:
 - Foo
-tags:
 ---
 
-This post is used for testing tag plugins. See [docs](http://zespia.tw/hexo/docs/tag-plugins.html) for more info.
+This is a link post. Clicking on the link should open [Google](http://www.google.com/) in a new tab or window.
 
 ## Block Quote
 
 ### Normal blockquote
 
 > Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-
+<!-- more -->
 ## Code Block
 
 ### Inline code block

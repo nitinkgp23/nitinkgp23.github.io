@@ -59,7 +59,7 @@ This completes our installation process.
 
     Inside the editor, paste the code below:
 
-    ```
+    ```go
     package main
 
     import "fmt"
