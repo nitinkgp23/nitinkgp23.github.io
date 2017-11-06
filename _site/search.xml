@@ -2,14 +2,75 @@
 <search>
   
     <entry>
-      <title><![CDATA[How I Got Started With Docker]]></title>
-      <url>/2017/10/30/how-i-got-started-with-docker/</url>
-      <content type="html"><![CDATA[
+      <title><![CDATA[Got a droplet? What next?]]></title>
+      <url>/tutorial/2017/11/07/Got-a-droplet-What-next/</url>
+      <content type="html"><![CDATA[<h1 id="getting-the-droplet">Getting the droplet</h1>
+
+<p>You can get a droplet on DigitialOcean at some minimal price. I got mine using the Github Student Pack, which gives an initial credit of 50 $. Below is explained well, the steps to follow just after you have got the server.</p>
+
+<p>I will be using ssh-keys to login to the server, hence at the time of the creation of the droplet, I chose the option ‘Use SSH Keys’ and uploaded the content of the file id_rsa.pub present in ~/.ssh . This helped me avoid getting a password of the server through the email.</p>
+
+<p>After completing the processes online, come back to the terminal and type:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@139.59.67.18
+</code></pre></div></div>
+
+<p>Replace the IP address with the server’s IP address. This won’t prompt you for a password if you have set up SSH as described above. (Also, make sure you are not behind a proxy or firewall.)</p>
+
+<h1 id="creating-a-sudo-user-on-ubuntu">Creating a sudo user on ubuntu</h1>
+
+<p>After ssh-ing into the server, the prompt becomes:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@pascal ~ $ 
+</code></pre></div></div>
+
+<p>Follow this DigitalOcean <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart">tutorial</a> to create a sudo user on the server. After following this tutorial, logout.</p>
+
+<p>Now, we will allow the user login through ssh. For this, follow the steps:</p>
+
+<ol>
+  <li>Login to the server again using <code class="highlighter-rouge">root@139.59.67.18</code>.</li>
+  <li><code class="highlighter-rouge">cat .ssh/authorized_keys</code>
+ This will echo the contents of the file. Copy the contents.</li>
+  <li><code class="highlighter-rouge">su - nitinkgp23</code>
+ nitinkgp23 is the username of the sudo user that we created following the DO tutorial.</li>
+  <li><code class="highlighter-rouge">mkdir .ssh &amp;&amp; cd .ssh</code> : Create the folder and cd into it.</li>
+  <li><code class="highlighter-rouge">touch authorized_keys</code> : Create the file.</li>
+  <li>Now, open the file using nano and paste the contents that you copied in Step 2.</li>
+  <li><code class="highlighter-rouge">cd ~</code> : Come back to the home folder.</li>
+  <li>Provide proper permissions to the ssh file :
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> chmod 700 .ssh
+ chmod 664 .ssh/authorized_keys
+ chown nitinkgp23:nitinkgp23 /home/nitinkgp23
+</code></pre></div>    </div>
+  </li>
+  <li>Logout</li>
+  <li>You can login to the server now using username : <code class="highlighter-rouge">ssh nitinkgp23@139.59.67.18</code></li>
+</ol>
+
+<h1 id="install-and-configure-realvnc-to-access-gui">Install and configure RealVNC to access GUI</h1>
+
+<p>Follow this <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-16-04">tutorial</a> to install RealVNC on your local computer and remote server.</p>
+
+<p>On running the command <code class="highlighter-rouge">vncserver</code> on remote server, suppose you get the output <code class="highlighter-rouge">New 'X' desktop is your_server_name.com:1</code></p>
+
+<p>Keep note of the number <code class="highlighter-rouge">1</code> . Now, come back to local computer, start VNC-Viewer (Install it, if not installed already), and create a new connection. Give the IP address as <code class="highlighter-rouge">139.59.67.18:1</code> . Note the number appended at last is <code class="highlighter-rouge">1</code>. This will start the GUI access to the droplet.</p>
+
+<h1 id="workaround-for-proxy">Workaround for proxy</h1>
+
 ]]></content>
       <categories>
         
+          <category> tutorial </category>
+        
       </categories>
       <tags>
+        
+          <tag> droplet </tag>
+        
+          <tag> server </tag>
+        
+          <tag> ubuntu </tag>
         
       </tags>
       <tags></tags>

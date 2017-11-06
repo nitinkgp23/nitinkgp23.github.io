@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-30T23:08:39+05:30</updated><id>http://localhost:4000/</id><title type="html">Blogs, Tutorials and Musings</title><subtitle>Indian Institute of Technology, Kharagpur</subtitle><author><name>anomaly_</name></author><entry><title type="html">How I Got Started With Docker</title><link href="http://localhost:4000/2017/10/30/how-i-got-started-with-docker/" rel="alternate" type="text/html" title="How I Got Started With Docker" /><published>2017-10-30T00:00:00+05:30</published><updated>2017-10-30T00:00:00+05:30</updated><id>http://localhost:4000/2017/10/30/how-i-got-started-with-docker</id><content type="html" xml:base="http://localhost:4000/2017/10/30/how-i-got-started-with-docker/"></content><author><name>anomaly_</name></author><summary type="html"></summary></entry><entry><title type="html">Getting started with Go</title><link href="http://localhost:4000/tutorial/2017/10/29/getting-started-with-go/" rel="alternate" type="text/html" title="Getting started with Go" /><published>2017-10-29T00:00:00+05:30</published><updated>2017-10-29T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/10/29/getting-started-with-go</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/10/29/getting-started-with-go/">&lt;p&gt;This tutorial walks through how I installed Go, and how I got started with it. I will keep on updating it, through my journey of learning Go.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-07T01:15:43+05:30</updated><id>http://localhost:4000/</id><title type="html">Blogs, Tutorials and Musings</title><subtitle>Indian Institute of Technology, Kharagpur</subtitle><author><name>anomaly_</name></author><entry><title type="html">Got a droplet? What next?</title><link href="http://localhost:4000/tutorial/2017/11/07/Got-a-droplet-What-next/" rel="alternate" type="text/html" title="Got a droplet? What next?" /><published>2017-11-07T00:00:00+05:30</published><updated>2017-11-07T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/11/07/Got%20a%20droplet?%20What%20next?</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/11/07/Got-a-droplet-What-next/">&lt;h1 id=&quot;getting-the-droplet&quot;&gt;Getting the droplet&lt;/h1&gt;
+
+&lt;p&gt;You can get a droplet on DigitialOcean at some minimal price. I got mine using the Github Student Pack, which gives an initial credit of 50 $. Below is explained well, the steps to follow just after you have got the server.&lt;/p&gt;
+
+&lt;p&gt;I will be using ssh-keys to login to the server, hence at the time of the creation of the droplet, I chose the option ‘Use SSH Keys’ and uploaded the content of the file id_rsa.pub present in ~/.ssh . This helped me avoid getting a password of the server through the email.&lt;/p&gt;
+
+&lt;p&gt;After completing the processes online, come back to the terminal and type:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh root@139.59.67.18
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Replace the IP address with the server’s IP address. This won’t prompt you for a password if you have set up SSH as described above. (Also, make sure you are not behind a proxy or firewall.)&lt;/p&gt;
+
+&lt;h1 id=&quot;creating-a-sudo-user-on-ubuntu&quot;&gt;Creating a sudo user on ubuntu&lt;/h1&gt;
+
+&lt;p&gt;After ssh-ing into the server, the prompt becomes:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@pascal ~ $ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Follow this DigitalOcean &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart&quot;&gt;tutorial&lt;/a&gt; to create a sudo user on the server. After following this tutorial, logout.&lt;/p&gt;
+
+&lt;p&gt;Now, we will allow the user login through ssh. For this, follow the steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Login to the server again using &lt;code class=&quot;highlighter-rouge&quot;&gt;root@139.59.67.18&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat .ssh/authorized_keys&lt;/code&gt;
+ This will echo the contents of the file. Copy the contents.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;su - nitinkgp23&lt;/code&gt;
+ nitinkgp23 is the username of the sudo user that we created following the DO tutorial.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir .ssh &amp;amp;&amp;amp; cd .ssh&lt;/code&gt; : Create the folder and cd into it.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;touch authorized_keys&lt;/code&gt; : Create the file.&lt;/li&gt;
+  &lt;li&gt;Now, open the file using nano and paste the contents that you copied in Step 2.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~&lt;/code&gt; : Come back to the home folder.&lt;/li&gt;
+  &lt;li&gt;Provide proper permissions to the ssh file :
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; chmod 700 .ssh
+ chmod 664 .ssh/authorized_keys
+ chown nitinkgp23:nitinkgp23 /home/nitinkgp23
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Logout&lt;/li&gt;
+  &lt;li&gt;You can login to the server now using username : &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh nitinkgp23@139.59.67.18&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;install-and-configure-realvnc-to-access-gui&quot;&gt;Install and configure RealVNC to access GUI&lt;/h1&gt;
+
+&lt;p&gt;Follow this &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-16-04&quot;&gt;tutorial&lt;/a&gt; to install RealVNC on your local computer and remote server.&lt;/p&gt;
+
+&lt;p&gt;On running the command &lt;code class=&quot;highlighter-rouge&quot;&gt;vncserver&lt;/code&gt; on remote server, suppose you get the output &lt;code class=&quot;highlighter-rouge&quot;&gt;New 'X' desktop is your_server_name.com:1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Keep note of the number &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; . Now, come back to local computer, start VNC-Viewer (Install it, if not installed already), and create a new connection. Give the IP address as &lt;code class=&quot;highlighter-rouge&quot;&gt;139.59.67.18:1&lt;/code&gt; . Note the number appended at last is &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;. This will start the GUI access to the droplet.&lt;/p&gt;
+
+&lt;h1 id=&quot;workaround-for-proxy&quot;&gt;Workaround for proxy&lt;/h1&gt;</content><author><name>anomaly_</name></author><category term="droplet" /><category term="server" /><category term="ubuntu" /><summary type="html">Getting the droplet You can get a droplet on DigitialOcean at some minimal price. I got mine using the Github Student Pack, which gives an initial credit of 50 $. Below is explained well, the steps to follow just after you have got the server. I will be using ssh-keys to login to the server, hence at the time of the creation of the droplet, I chose the option ‘Use SSH Keys’ and uploaded the content of the file id_rsa.pub present in ~/.ssh . This helped me avoid getting a password of the server through the email. After completing the processes online, come back to the terminal and type: ssh root@139.59.67.18 Replace the IP address with the server’s IP address. This won’t prompt you for a password if you have set up SSH as described above. (Also, make sure you are not behind a proxy or firewall.) Creating a sudo user on ubuntu After ssh-ing into the server, the prompt becomes: root@pascal ~ $ Follow this DigitalOcean tutorial to create a sudo user on the server. After following this tutorial, logout. Now, we will allow the user login through ssh. For this, follow the steps: Login to the server again using root@139.59.67.18. cat .ssh/authorized_keys This will echo the contents of the file. Copy the contents. su - nitinkgp23 nitinkgp23 is the username of the sudo user that we created following the DO tutorial. mkdir .ssh &amp;amp;&amp;amp; cd .ssh : Create the folder and cd into it. touch authorized_keys : Create the file. Now, open the file using nano and paste the contents that you copied in Step 2. cd ~ : Come back to the home folder. Provide proper permissions to the ssh file : chmod 700 .ssh chmod 664 .ssh/authorized_keys chown nitinkgp23:nitinkgp23 /home/nitinkgp23 Logout You can login to the server now using username : ssh nitinkgp23@139.59.67.18 Install and configure RealVNC to access GUI Follow this tutorial to install RealVNC on your local computer and remote server. On running the command vncserver on remote server, suppose you get the output New 'X' desktop is your_server_name.com:1 Keep note of the number 1 . Now, come back to local computer, start VNC-Viewer (Install it, if not installed already), and create a new connection. Give the IP address as 139.59.67.18:1 . Note the number appended at last is 1. This will start the GUI access to the droplet. Workaround for proxy</summary></entry><entry><title type="html">Getting started with Go</title><link href="http://localhost:4000/tutorial/2017/10/29/getting-started-with-go/" rel="alternate" type="text/html" title="Getting started with Go" /><published>2017-10-29T00:00:00+05:30</published><updated>2017-10-29T00:00:00+05:30</updated><id>http://localhost:4000/tutorial/2017/10/29/getting-started-with-go</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/10/29/getting-started-with-go/">&lt;p&gt;This tutorial walks through how I installed Go, and how I got started with it. I will keep on updating it, through my journey of learning Go.&lt;/p&gt;
 
 &lt;h1 id=&quot;installation&quot;&gt;Installation&lt;/h1&gt;
 
