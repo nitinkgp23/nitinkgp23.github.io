@@ -17,9 +17,9 @@ There has been a little change in my plan, and last week, I stopped with writing
 <!-- more -->
 Until now, I have achieved the following tasks:
 
-    Covered the drms package to 66%
-    All the offline tests have been written, and jsoc tests have also been completed. The only thing that remains is testing the download function which will require mocking.
-    Mocking will also be required to avoid the online tests of jsoc.
++ Covered the drms package to 66%
++ All the offline tests have been written, and jsoc tests have also been completed. The only thing that remains is testing the download function which will require mocking.
++ Mocking will also be required to avoid the online tests of jsoc.
 
 I have planned to continue with the drms tests, especially mocking, from my 8th week of the coding period, just after my second evaluation. This phase of the coding period will be given to sunpy integration of the drms package.
 
@@ -27,6 +27,6 @@ The work done so far in drms is contained in this [PR](https://github.com/kbg/dr
 
 In SunPy integration, I have integrated these parts:
 
-    Modified the query function of JSOC-Client to use the drms’ query function. Currently, basic requests can be made by providing keys only.
++ Modified the query function of JSOC-Client to use the drms’ query function. Currently, basic requests can be made by providing keys only.
 
 I aim to completely modify the query function, implementing all the necessary features, within a couple of days. I will go ahead with modifying the export method in the next week.
