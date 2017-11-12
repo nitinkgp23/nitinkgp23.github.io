@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="" />
+  <meta name="keywords" content="gsoc,open-source,sunpy,drms," />
 
 
 
@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="This is a link post. Clicking on the link should open Google in a new tab or window. Block Quote Normal blockquote Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.">
-<meta name="keywords" content="Jekyll, NexT">
+<meta name="description" content="One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.">
+<meta name="keywords" content="gsoc, open-source, sunpy, drms">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Theme posts">
-<meta property="og:url" content="http://localhost:4000/foo/2013/12/25/post-stylings/">
+<meta property="og:title" content="GSoC wrap-up!">
+<meta property="og:url" content="http://localhost:4000/gsoc/2017/08/19/GSoC-wrap-up/">
 <meta property="og:site_name" content="Blogs, Tutorials and Musings">
-<meta property="og:description" content="This is a link post. Clicking on the link should open Google in a new tab or window. Block Quote Normal blockquote Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.">
+<meta property="og:description" content="One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Theme posts">
-<meta name="twitter:description" content="This is a link post. Clicking on the link should open Google in a new tab or window. Block Quote Normal blockquote Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.">
+<meta name="twitter:title" content="GSoC wrap-up!">
+<meta name="twitter:description" content="One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>Theme posts</title>
+  <title>GSoC wrap-up!</title>
   
 
 
@@ -338,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/foo/2013/12/25/post-stylings/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/gsoc/2017/08/19/GSoC-wrap-up/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="anomaly_">
@@ -358,12 +358,8 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-              
-              <a class="post-title-link post-title-link-external" target="_blank" href="http://www.google.com/" itemprop="url">
-                Theme posts
-                <i class="fa fa-external-link"></i>
-              </a>
-            
+            GSoC wrap-up!
+          
         </h1>
         
 
@@ -376,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-12-25T05:00:04+05:30">
-                25-12-2013
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-19T00:00:00+05:30">
+                19-08-2017
               </time>
             
 
@@ -400,8 +396,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/Foo" itemprop="url" rel="index">
-                    <span itemprop="name">Foo</span>
+                  <a href="/category/#/GSoC" itemprop="url" rel="index">
+                    <span itemprop="name">GSoC</span>
                   </a>
                 </span>
 
@@ -418,9 +414,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/foo/2013/12/25/post-stylings/#comments" itemprop="discussionUrl">
+                <a href="/gsoc/2017/08/19/GSoC-wrap-up/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/foo/2013/12/25/post-stylings/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/gsoc/2017/08/19/GSoC-wrap-up/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -436,7 +432,7 @@
           
             
                 <div class="post-description">
-                    
+                    One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
                 </div>
             
           
@@ -451,49 +447,80 @@
       
 
       
-        <p>This is a link post. Clicking on the link should open <a href="http://www.google.com/">Google</a> in a new tab or window.</p>
+        <p>How time flies! Three months of the GSoC coding period are coming to an end now; most of the coding is done; documentation is done; testing is done. After missing 3 blog posts, unfortunately (I postponed it due to some rough time I had), here is a long one, describing whatever I did during my summers, and what else needs to be done before the PR gets merged.</p>
 
-<h2 id="block-quote">Block Quote</h2>
+<p>My GSoC project was divided into 2 parts, one was writing a full test-suite for the <a href="https://github.com/kbg/drms">drms package</a>, and the second one was integrating this package into SunPy’s JSOC Client. While there are a few tests still remaining to be done for the first part, the second part is complete. Only blocker is passing of Travis build, which Cadair said, he will look into.</p>
 
-<h3 id="normal-blockquote">Normal blockquote</h3>
+<h2 id="test-suite-for-drms">Test-suite for drms</h2>
 
-<blockquote>
-  <p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-<!-- more --></p>
-  <h2 id="code-block">Code Block</h2>
-</blockquote>
+<p><a href="https://github.com/kbg/drms/pull/7">This</a> is the PR that contains all of my tests for the drms package :</p>
 
-<h3 id="inline-code-block">Inline code block</h3>
+<p>This PR adds tests for utils.py, config.py and client.py Covers config.py to 100% Covers utils.py to 81% WIP for client.</p>
 
-<p>This is a inline code block: <code class="highlighter-rouge">python</code>, <code class="highlighter-rouge">print 'helloworld'</code>.</p>
+<p>The coverage for the drms package &gt; 80% , after excluding those files for which tests are not required, for example, config.py . The only function that needs to be tested, is the download function, for which I couldn’t get enough time to do, due to some extra modifications that had to done in my Part-2 of the project.</p>
 
-<h3 id="normal-code-block">Normal code block</h3>
+<p>All the above tests are passing, as checked on my local computer, and all the functions other than the download function, are covered with the test-suite. Once the tests for the download function have been written, Travis can be added in the repository for the online builds, and can be converted into a conda package, later.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alert('Hello World!');
-</code></pre></div></div>
+<h2 id="the-new-jsoc-client">The new JSOC-Client</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print "Hello world"
-</code></pre></div></div>
+<p>My Part-2 of the project is contained in this <a href="https://github.com/sunpy/sunpy/pull/2188">PR</a>:</p>
 
-<h3 id="highlight-code-block">Highlight code block</h3>
+<p>This PR aims to convert the old JSOC Client to use <a href="https://github.com/kbg/drms">drms</a>, as its backend.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="s">"Hello world"</span>
-</code></pre></div></div>
+<p>This PR contains a total of 53 commits, with 1019 lines of code added, and 451 deletions as of now. It contains all of the summer project code, related to drms - SunPy integration, and contains the test-suite, documentation and the main code.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span></code></pre></figure>
+<p>The main changes that have been done in the SunPy client are:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span></pre></td></tr></tbody></table></code></pre></figure>
+<ul>
+  <li><code class="highlighter-rouge">search()</code>, <code class="highlighter-rouge">fetch()</code>, <code class="highlighter-rouge">get_request()</code> and <code class="highlighter-rouge">request_data()</code> functions have their backend changed. Now, it does all its operations through the drms package.</li>
+  <li>Note the change in the naming of the functions, <code class="highlighter-rouge">search()</code> which was <code class="highlighter-rouge">query()</code> earlier, and <code class="highlighter-rouge">fetch()</code> which was <code class="highlighter-rouge">get()</code> earlier. This change hasn’t been made in this PR.</li>
+  <li>A new function <code class="highlighter-rouge">search_metadata()</code> has been added, that takes the same input as the <code class="highlighter-rouge">search()</code> function and returns the whole set of metadata for the queried files.</li>
+  <li>It returns a Pandas Dataframe that has rows as the queried files, and the columns as the name of keys for each file.</li>
+  <li><code class="highlighter-rouge">jsoc.attrs.Compression()</code> property has been removed, since downloading of uncompressed files are not supported.</li>
+  <li>Now, <code class="highlighter-rouge">Series()</code> is the only mandatory attribute that needs to be provided. Other than Series, you must provide the value of at least one prime-key. Passing of time attributes isn’t mandatory anymore.</li>
+  <li>You can pass Primekeys manually through <code class="highlighter-rouge">jsoc.attrs.PrimeKeys()</code> attribute.</li>
+  <li>Basically, PrimeKeys are the keys that can identify one queried file from another. Not providing a PrimeKey will give an error, as more than one file can be located for the same set of keys passed. Hence, passing of at least one PrimeKey is mandatory.</li>
+  <li>Time is one of the primekeys that is common across all series. Hence, it has been predefined in <code class="highlighter-rouge">jsoc.attrs.Time()</code> . Another common primekey in aia series data is <code class="highlighter-rouge">jsoc.attrs.Wavelength()</code> which has also been predefined.</li>
+  <li>If you need to pass any other primekey manually, pass it through <code class="highlighter-rouge">jsoc.attrs.PrimeKeys()</code> attribute, like <code class="highlighter-rouge">jsoc.attrs.PrimeKeys({'HARPNUM':'5264'})</code> .</li>
+  <li>Keys can be manually passed. There is a default set of keywords like before, but you can override it by passing a list of keywords using <code class="highlighter-rouge">jsoc.attrs.Keys()</code> attribute.</li>
+  <li>More than 1 segment can be passed at a time, and that won’t result in formation of two query blocks. i.e. Segments can be ANDed. That is, this is possible :
+<code class="highlighter-rouge">jsoc.attrs.Segment('Dopplergram')</code> &amp; <code class="highlighter-rouge">jsoc.attrs.Segment('magnetogram')</code></li>
+  <li>An interactive interface is built, in which when you pass an invalid segment name, or prime-key’s name, the code will break, and will give you the list of supported primekeys or segments, whichever be the case.
+For example,
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>responses = client.search(jsoc.attrs.Time(‘2012/1/1T1:00:36’, ‘2012/1/1T01:00:38’),
+     jsoc.attrs.Series(‘hmi.M_45s’), jsoc.attrs.Segment(‘foo’))
+</code></pre></div>    </div>
+    <p>gives an error this:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ValueError: Unexpected Segments were passed. The series hmi.M_45s contains the following Segments [‘magnetogram’]
+which clearly mentions, which segment names can be passed for the given series.
+</code></pre></div>    </div>
+  </li>
+</ul>
 
-<h3 id="gist">Gist</h3>
+<p>These are the features of the new JSOC Client.</p>
 
-<script src="https://gist.github.com/996818.js"> </script>
+<ul>
+  <li>
+    <p>Apart from these, the PR contains, an extensive test-suite, that primarily focuses on the sunpy functionalities, that is, the functions <code class="highlighter-rouge">_lookup_records()</code> and <code class="highlighter-rouge">_make_recordset()</code>. All corner cases and combinations have been tested. The part that uses the drms package, hasn’t been tested extensively (though, at least one check has been added for all the functions), since drms already covers those tests.</p>
+  </li>
+  <li>
+    <p>The docstrings after each function in the file jsoc.py is very detailed, and is full of examples. The narrative documentation is also detailed, explaining how to use jsoc client, both through Fido and direct usage. The narrative docs are also full of examples.</p>
+  </li>
+</ul>
+
+<p>Hence, the sunpy integration of drms is complete. The only remaining blocker is that Travis fails for python 2.7 in installing drms. It will hopefully be solved soon.</p>
+
+<h2 id="modifying-time-attribute-of-vso">Modifying Time attribute of VSO</h2>
+
+<p><a href="https://github.com/sunpy/sunpy/pull/2260">This</a> is one of my very recent PRs :</p>
+
+<p>This is WIP, and is a very initial effort to modify the Time attribute of VSO Client to return an astropy.time object instead of a datetime.datetime object. This was needed in order to support input of time in other Time scales, such as TAI.</p>
+
+<p>This is WIP, and will be hopefully completed before the coding period is over.</p>
+
+<p>And so, the summer time flew! I really enjoyed working on the project, and learned a great deal, about how to write software, and especially how to test them. My other project proposal, which was about developing the package Sunkit-image, is still in my wishlist, and would love to take it up after I have wrapped this whole thing up.</p>
+
+<p>GSoC was one hell of an experience! Thank you Sunpy! Thank you Google! :D :D</p>
 
 
       
@@ -522,6 +549,22 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/gsoc" rel="tag"># gsoc</a>
+          
+            
+            <a href="/tag/#/open-source" rel="tag"># open-source</a>
+          
+            
+            <a href="/tag/#/sunpy" rel="tag"># sunpy</a>
+          
+            
+            <a href="/tag/#/drms" rel="tag"># drms</a>
+          
+        </div>
+      
 
       
       
@@ -534,8 +577,8 @@
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/tutorial/2017/03/04/home-automation/" rel="next" title="Home automation">
-                <i class="fa fa-chevron-left"></i> Home automation
+              <a href="/tutorial/2017/10/29/getting-started-with-go/" rel="next" title="Getting started with Go">
+                <i class="fa fa-chevron-left"></i> Getting started with Go
               </a>
             
           </div>
@@ -543,6 +586,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/gsoc/2017/06/28/1st-evaluation-knocks/" rel="prev" title="1st evaluation knocks!">
+                1st evaluation knocks! <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -746,7 +793,7 @@
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-2"> <a class="nav-link" href="#block-quote"> <span class="nav-number">1</span> <span class="nav-text">Block Quote</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#normal-blockquote"> <span class="nav-number">1.1</span> <span class="nav-text">Normal blockquote</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#code-block"> <span class="nav-number">2</span> <span class="nav-text">Code Block</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#inline-code-block"> <span class="nav-number">2.1</span> <span class="nav-text">Inline code block</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#normal-code-block"> <span class="nav-number">2.2</span> <span class="nav-text">Normal code block</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#highlight-code-block"> <span class="nav-number">2.3</span> <span class="nav-text">Highlight code block</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#gist"> <span class="nav-number">2.4</span> <span class="nav-text">Gist</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#test-suite-for-drms"> <span class="nav-number">1</span> <span class="nav-text">Test-suite for drms</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#the-new-jsoc-client"> <span class="nav-number">2</span> <span class="nav-text">The new JSOC-Client</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#modifying-time-attribute-of-vso"> <span class="nav-number">3</span> <span class="nav-text">Modifying Time attribute of VSO</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
     </ol>
   </div>
             
@@ -922,9 +969,9 @@
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/foo/2013/12/25/post-stylings/';
-              this.page.identifier = '/foo/2013/12/25/post-stylings/';
-              this.page.title = 'Theme posts';
+              this.page.url = 'http://localhost:4000/gsoc/2017/08/19/GSoC-wrap-up/';
+              this.page.identifier = '/gsoc/2017/08/19/GSoC-wrap-up/';
+              this.page.title = 'GSoC wrap-up!';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://.disqus.com/embed.js';

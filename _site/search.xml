@@ -162,6 +162,287 @@
     </entry>
   
     <entry>
+      <title><![CDATA[GSoC wrap-up!]]></title>
+      <url>/gsoc/2017/08/19/GSoC-wrap-up/</url>
+      <content type="html"><![CDATA[<p>How time flies! Three months of the GSoC coding period are coming to an end now; most of the coding is done; documentation is done; testing is done. After missing 3 blog posts, unfortunately (I postponed it due to some rough time I had), here is a long one, describing whatever I did during my summers, and what else needs to be done before the PR gets merged.</p>
+
+<p>My GSoC project was divided into 2 parts, one was writing a full test-suite for the <a href="https://github.com/kbg/drms">drms package</a>, and the second one was integrating this package into SunPy’s JSOC Client. While there are a few tests still remaining to be done for the first part, the second part is complete. Only blocker is passing of Travis build, which Cadair said, he will look into.</p>
+
+<h2 id="test-suite-for-drms">Test-suite for drms</h2>
+
+<p><a href="https://github.com/kbg/drms/pull/7">This</a> is the PR that contains all of my tests for the drms package :</p>
+
+<p>This PR adds tests for utils.py, config.py and client.py Covers config.py to 100% Covers utils.py to 81% WIP for client.</p>
+
+<p>The coverage for the drms package &gt; 80% , after excluding those files for which tests are not required, for example, config.py . The only function that needs to be tested, is the download function, for which I couldn’t get enough time to do, due to some extra modifications that had to done in my Part-2 of the project.</p>
+
+<p>All the above tests are passing, as checked on my local computer, and all the functions other than the download function, are covered with the test-suite. Once the tests for the download function have been written, Travis can be added in the repository for the online builds, and can be converted into a conda package, later.</p>
+
+<h2 id="the-new-jsoc-client">The new JSOC-Client</h2>
+
+<p>My Part-2 of the project is contained in this <a href="https://github.com/sunpy/sunpy/pull/2188">PR</a>:</p>
+
+<p>This PR aims to convert the old JSOC Client to use <a href="https://github.com/kbg/drms">drms</a>, as its backend.</p>
+
+<p>This PR contains a total of 53 commits, with 1019 lines of code added, and 451 deletions as of now. It contains all of the summer project code, related to drms - SunPy integration, and contains the test-suite, documentation and the main code.</p>
+
+<p>The main changes that have been done in the SunPy client are:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">search()</code>, <code class="highlighter-rouge">fetch()</code>, <code class="highlighter-rouge">get_request()</code> and <code class="highlighter-rouge">request_data()</code> functions have their backend changed. Now, it does all its operations through the drms package.</li>
+  <li>Note the change in the naming of the functions, <code class="highlighter-rouge">search()</code> which was <code class="highlighter-rouge">query()</code> earlier, and <code class="highlighter-rouge">fetch()</code> which was <code class="highlighter-rouge">get()</code> earlier. This change hasn’t been made in this PR.</li>
+  <li>A new function <code class="highlighter-rouge">search_metadata()</code> has been added, that takes the same input as the <code class="highlighter-rouge">search()</code> function and returns the whole set of metadata for the queried files.</li>
+  <li>It returns a Pandas Dataframe that has rows as the queried files, and the columns as the name of keys for each file.</li>
+  <li><code class="highlighter-rouge">jsoc.attrs.Compression()</code> property has been removed, since downloading of uncompressed files are not supported.</li>
+  <li>Now, <code class="highlighter-rouge">Series()</code> is the only mandatory attribute that needs to be provided. Other than Series, you must provide the value of at least one prime-key. Passing of time attributes isn’t mandatory anymore.</li>
+  <li>You can pass Primekeys manually through <code class="highlighter-rouge">jsoc.attrs.PrimeKeys()</code> attribute.</li>
+  <li>Basically, PrimeKeys are the keys that can identify one queried file from another. Not providing a PrimeKey will give an error, as more than one file can be located for the same set of keys passed. Hence, passing of at least one PrimeKey is mandatory.</li>
+  <li>Time is one of the primekeys that is common across all series. Hence, it has been predefined in <code class="highlighter-rouge">jsoc.attrs.Time()</code> . Another common primekey in aia series data is <code class="highlighter-rouge">jsoc.attrs.Wavelength()</code> which has also been predefined.</li>
+  <li>If you need to pass any other primekey manually, pass it through <code class="highlighter-rouge">jsoc.attrs.PrimeKeys()</code> attribute, like <code class="highlighter-rouge">jsoc.attrs.PrimeKeys({'HARPNUM':'5264'})</code> .</li>
+  <li>Keys can be manually passed. There is a default set of keywords like before, but you can override it by passing a list of keywords using <code class="highlighter-rouge">jsoc.attrs.Keys()</code> attribute.</li>
+  <li>More than 1 segment can be passed at a time, and that won’t result in formation of two query blocks. i.e. Segments can be ANDed. That is, this is possible :
+<code class="highlighter-rouge">jsoc.attrs.Segment('Dopplergram')</code> &amp; <code class="highlighter-rouge">jsoc.attrs.Segment('magnetogram')</code></li>
+  <li>An interactive interface is built, in which when you pass an invalid segment name, or prime-key’s name, the code will break, and will give you the list of supported primekeys or segments, whichever be the case.
+For example,
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>responses = client.search(jsoc.attrs.Time(‘2012/1/1T1:00:36’, ‘2012/1/1T01:00:38’),
+     jsoc.attrs.Series(‘hmi.M_45s’), jsoc.attrs.Segment(‘foo’))
+</code></pre></div>    </div>
+    <p>gives an error this:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ValueError: Unexpected Segments were passed. The series hmi.M_45s contains the following Segments [‘magnetogram’]
+which clearly mentions, which segment names can be passed for the given series.
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>These are the features of the new JSOC Client.</p>
+
+<ul>
+  <li>
+    <p>Apart from these, the PR contains, an extensive test-suite, that primarily focuses on the sunpy functionalities, that is, the functions <code class="highlighter-rouge">_lookup_records()</code> and <code class="highlighter-rouge">_make_recordset()</code>. All corner cases and combinations have been tested. The part that uses the drms package, hasn’t been tested extensively (though, at least one check has been added for all the functions), since drms already covers those tests.</p>
+  </li>
+  <li>
+    <p>The docstrings after each function in the file jsoc.py is very detailed, and is full of examples. The narrative documentation is also detailed, explaining how to use jsoc client, both through Fido and direct usage. The narrative docs are also full of examples.</p>
+  </li>
+</ul>
+
+<p>Hence, the sunpy integration of drms is complete. The only remaining blocker is that Travis fails for python 2.7 in installing drms. It will hopefully be solved soon.</p>
+
+<h2 id="modifying-time-attribute-of-vso">Modifying Time attribute of VSO</h2>
+
+<p><a href="https://github.com/sunpy/sunpy/pull/2260">This</a> is one of my very recent PRs :</p>
+
+<p>This is WIP, and is a very initial effort to modify the Time attribute of VSO Client to return an astropy.time object instead of a datetime.datetime object. This was needed in order to support input of time in other Time scales, such as TAI.</p>
+
+<p>This is WIP, and will be hopefully completed before the coding period is over.</p>
+
+<p>And so, the summer time flew! I really enjoyed working on the project, and learned a great deal, about how to write software, and especially how to test them. My other project proposal, which was about developing the package Sunkit-image, is still in my wishlist, and would love to take it up after I have wrapped this whole thing up.</p>
+
+<p>GSoC was one hell of an experience! Thank you Sunpy! Thank you Google! :D :D</p>
+
+]]></content>
+      <categories>
+        
+          <category> GSoC </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> gsoc </tag>
+        
+          <tag> open-source </tag>
+        
+          <tag> sunpy </tag>
+        
+          <tag> drms </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[1st evaluation knocks!]]></title>
+      <url>/gsoc/2017/06/28/1st-evaluation-knocks/</url>
+      <content type="html"><![CDATA[<p>It’s a month now, since the coding period has begun, and here comes the week of evaluation. My mentors will be evaluating me on the work that has been done till now, and I wish I pass this.</p>
+
+<p>There has been a little change in my plan, and last week, I stopped with writing tests for drms, and started doing the sunpy integration. Writing tests for 3 weeks got a bit monotonous for me, and hence I put up this idea with my mentors, on which they gladly agreed. It was going to give me a good break from writing tests for a while.</p>
+
+<p>Until now, I have achieved the following tasks:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Covered the drms package to 66%
+All the offline tests have been written, and jsoc tests have also been completed. The only thing that remains is testing the download function which will require mocking.
+Mocking will also be required to avoid the online tests of jsoc.
+</code></pre></div></div>
+
+<p>I have planned to continue with the drms tests, especially mocking, from my 8th week of the coding period, just after my second evaluation. This phase of the coding period will be given to sunpy integration of the drms package.</p>
+
+<p>The work done so far in drms is contained in this <a href="https://github.com/kbg/drms/pull/7">PR</a>.</p>
+
+<p>In SunPy integration, I have integrated these parts:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Modified the query function of JSOC-Client to use the drms’ query function. Currently, basic requests can be made by providing keys only.
+</code></pre></div></div>
+
+<p>I aim to completely modify the query function, implementing all the necessary features, within a couple of days. I will go ahead with modifying the export method in the next week.</p>
+]]></content>
+      <categories>
+        
+          <category> GSoC </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> gsoc </tag>
+        
+          <tag> open-source </tag>
+        
+          <tag> sunpy </tag>
+        
+          <tag> drms </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[2 weeks of coding period]]></title>
+      <url>/gsoc/2017/06/17/2-weeks-of-coding-period/</url>
+      <content type="html"><![CDATA[<p>Well, to be honest, 2 weeks of coding period is already past, and I haven’t yet started the main challenge — mocking! Though, the test coverage has reached to 64% already, but there are a lots of important tests to be written.</p>
+
+<p>My internship period is finally over, and from now on, I can devote 8 hrs per day easily. This will help me to makeup for the time I lost during these 2 weeks. According to my timeline, I had to finish up the drms part of the project before my first evaluation, and then go ahead with rewriting SunPy’s JSOC Client in my second phase of the coding period. Although I will try to stick to this to the best of my ability, I may require an extra week for finalising the drms package.</p>
+
+<p>This shift won’t be a problem, as I had already spared 3 weeks of time at the end of my coding period as a buffer. I will be updating with whatever I do this week and next, in my next blog.</p>
+
+<p>Let’s hope I have finished up most of my tests when I am writing my next blog!
+<a href="https://cdn-images-1.medium.com/max/800/1*g9NWL0cA94n1PiK4Aoe3og.gif">gif</a></p>
+]]></content>
+      <categories>
+        
+          <category> GSoC </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> gsoc </tag>
+        
+          <tag> open-source </tag>
+        
+          <tag> sunpy </tag>
+        
+          <tag> drms </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Anddd.. The coding period begins!]]></title>
+      <url>/gsoc/2017/05/31/Anddd-the-coding-period-begins/</url>
+      <content type="html"><![CDATA[<p>After wasting away a full month of community bonding period (Naah, not wasting :/. I was busy doing an internship.), the coding period has finally arrived at my doors. I still have no idea about how I will begin with writing mock tests, and how will I achieve a full code coverage of 100% within 4 weeks.
+<a href="https://cdn-images-1.medium.com/max/800/1*1EUR27g31w4wltCoEbOP5g.gif">gif</a>
+Absolutely no idea what’s happening!</p>
+
+<p>Anyways, let’s see what happens next.</p>
+
+<p>Kolja has been helping me by pushing some of his already written tests, and the coverage has already reached to almost 35%. But, the most challenging part of Phase 1 is yet to be started — writing Mocks.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mocking is simply the act of replacing the part of the application you are testing with a dummy version of that part called a mock. Instead of calling the actual implementation, you would call the mock, and then make assertions about what you expect to happen.
+</code></pre></div></div>
+
+<p>Python has a built-in library called unittest.mock that is used for creating mock objects. Going through numerous articles, blogs and video lectures, I have finally made sense of this weird technique. Yeah, weird, because although I say, I have made sense of it, I won’t be able to mock even a simple API call.
+<a href="https://cdn-images-1.medium.com/max/800/1*oLlrmK5ps4sJDpRW8hwwpg.gif">gif</a>
+I am so ashamed of myself! :’(</p>
+
+<p>The drms module for which, I have to write tests, fetches data from a server. So, to avoid interacting with the servers, or connecting online, every time the tests are run is, not a very good idea. With other alternatives to this option, one of them is to mock the objects. I have planned to finish up the testing part, in 3 weeks, and kept the last 1 week as buffer. I hope I pass my 1st evaluation!</p>
+
+<p><a href="https://cdn-images-1.medium.com/max/800/1*Jy-G4hziENez5JVhwx1hHA.gif">gif</a>
+Dear Lord, give me strength!</p>
+]]></content>
+      <categories>
+        
+          <category> GSoC </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> gsoc </tag>
+        
+          <tag> open-source </tag>
+        
+          <tag> sunpy </tag>
+        
+          <tag> drms </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[GSoC Application selected]]></title>
+      <url>/gsoc/2017/05/09/GSoC-Application-selected/</url>
+      <content type="html"><![CDATA[<p>Well, I was on a trek this week, on a height of about 4000 meters and it wasn’t a surprise that I had no network there. The day the GSoC results came, I was unaware of all the happenings going down there. I was dying to get back down, and see whether my 2 months of toiling hard work had born fruit.</p>
+
+<p>I had managed to submit two proposals in SunPy before the deadline. Yes, TWO! In my last blog post, I talked about how interesting the project Sunkit-image sounded to me, and how I was looking forward to prepare a proposal for it. Anyways, things changed a bit, when Cadair asked to me look a bit on the other project- improving the Drms module for JSOC downloads.</p>
+
+<p>This was the project I had initially chosen to work on, but had dropped it due to lack of ideas. Things came back to life when the project came up on the ideas page and when I had a thorough discussion with Kolja, the main developer of the drms package.</p>
+
+<p>Finally, after a series of night-outs and toiling hard work, I was successful in submitting both the proposals — one for the Sunkit-image and the other for Drms module for JSOC Downloads.</p>
+
+<p>And guess what, the Drms project was finally selected! Looking forward to having a great summer ahead, while I work with Kolja and Monica (my mentors for this project) to improve the drms module and the JSOC Client.</p>
+
+<p>Cheers.</p>
+]]></content>
+      <categories>
+        
+          <category> GSoC </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> gsoc </tag>
+        
+          <tag> open-source </tag>
+        
+          <tag> sunpy </tag>
+        
+          <tag> drms </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[GSoC Organisation List out]]></title>
+      <url>/gsoc/2017/03/09/GSoC-Organisation-List-out/</url>
+      <content type="html"><![CDATA[<p>27th of February, it is. I am enjoying at a party with the other KOSS people. Somewhere far away, a PR was getting merged, to show to the world (not literally, only the GSoC aspirants) which organizations would participate in Google Summer of Code 2017. I didn’t have to worry (<em>Overconfidence</em>) , cause I was sure OpenAstronomy would be selected.</p>
+
+<p>I had been involved with SunPy over a fortnight now, and I was sure of doing a project under this org. Although, I am not an astrophysicist (nor I plan to be :p), my long lost interest in astronomy came back alive when I started working with this org. All those times in my high school, when I dreamed of becoming an astrophysicist, or reading about Einstein’s Theory of Relativity and spending hours understanding the Twin’s paradox or Lorrentz’s contraction. Ahh! Those days. And, then somehow, software caught me. :/</p>
+
+<p>But, who knew I would someday be developing such cool software and working on such interesting projects, all related to astronomy and our very own, the Sun!</p>
+
+<p>I started to look for some bugs that I could solve, and some documentation fixes that I could do, that would help me get familiar with the code base. I had to decide a project too, and I got a wonderful one that fitted all my interests. Having done some image-processing before, I had to develop whole of a library in SunPy, named Sunkit-image, that would deal with all the image processing routines in solar analysis.</p>
+
+<p>Currently, I am working on my proposal, trying to understand the codebase as much as I can, reading up papers, getting intimidated by how cool things our scientists do!</p>
+]]></content>
+      <categories>
+        
+          <category> GSoC </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> gsoc </tag>
+        
+          <tag> open-source </tag>
+        
+          <tag> sunpy </tag>
+        
+          <tag> drms </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Home automation]]></title>
       <url>/tutorial/2017/03/04/home-automation/</url>
       <content type="html"><![CDATA[<p>Lying on the bed, just before dozing off to sleep every night, I wondered how wonderful it would be if my roomie would get up from his bed and switch off the tubelight for me. Ohh, throwing all sort of tantrums and tempting offers to my roomies to make them get up from bed for me was hell of a job. Sometimes I would succeed, but mostly, I would have to get out from the quilt, in shivering cold, and trouble my legs to walk a 3 metre distance to turn off the switch.
