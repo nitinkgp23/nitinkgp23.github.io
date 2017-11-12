@@ -1,6 +1,5 @@
 ---
 title: 1st evaluation knocks!
-description: One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
 date: 2017-06-28
 categories:
  - GSoC
@@ -15,7 +14,7 @@ comments: true
 It’s a month now, since the coding period has begun, and here comes the week of evaluation. My mentors will be evaluating me on the work that has been done till now, and I wish I pass this.
 
 There has been a little change in my plan, and last week, I stopped with writing tests for drms, and started doing the sunpy integration. Writing tests for 3 weeks got a bit monotonous for me, and hence I put up this idea with my mentors, on which they gladly agreed. It was going to give me a good break from writing tests for a while.
-
+<!-- more -->
 Until now, I have achieved the following tasks:
 
     Covered the drms package to 66%

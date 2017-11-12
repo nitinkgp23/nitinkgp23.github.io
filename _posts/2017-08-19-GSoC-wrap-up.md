@@ -1,6 +1,5 @@
 ---
 title: GSoC wrap-up!
-description: One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
 date: 2017-08-19
 categories:
  - GSoC
@@ -13,7 +12,7 @@ comments: true
 ---
 
 How time flies! Three months of the GSoC coding period are coming to an end now; most of the coding is done; documentation is done; testing is done. After missing 3 blog posts, unfortunately (I postponed it due to some rough time I had), here is a long one, describing whatever I did during my summers, and what else needs to be done before the PR gets merged.
-
+<!-- more -->
 My GSoC project was divided into 2 parts, one was writing a full test-suite for the [drms package](https://github.com/kbg/drms), and the second one was integrating this package into SunPy’s JSOC Client. While there are a few tests still remaining to be done for the first part, the second part is complete. Only blocker is passing of Travis build, which Cadair said, he will look into.
 
 ## Test-suite for drms

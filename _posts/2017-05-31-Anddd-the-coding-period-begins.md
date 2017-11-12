@@ -1,6 +1,5 @@
 ---
 title: Anddd.. The coding period begins!
-description: One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
 date: 2017-05-31
 categories:
  - GSoC
@@ -15,7 +14,7 @@ comments: true
 After wasting away a full month of community bonding period (Naah, not wasting :/. I was busy doing an internship.), the coding period has finally arrived at my doors. I still have no idea about how I will begin with writing mock tests, and how will I achieve a full code coverage of 100% within 4 weeks.
 [gif](https://cdn-images-1.medium.com/max/800/1*1EUR27g31w4wltCoEbOP5g.gif)
 Absolutely no idea what’s happening!
-
+<!-- more -->
 Anyways, let’s see what happens next.
 
 Kolja has been helping me by pushing some of his already written tests, and the coverage has already reached to almost 35%. But, the most challenging part of Phase 1 is yet to be started — writing Mocks.
