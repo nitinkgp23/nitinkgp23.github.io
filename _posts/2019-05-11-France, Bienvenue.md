@@ -1,6 +1,6 @@
 ---
 title: France, Beinvenue
-description: One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
+description: Just checking the math
 date: 2019-05-08
 categories:
  - experience
