@@ -9,12 +9,9 @@ tags:
  - france
 comments: true
 ---
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 
-# Getting the droplet
+# Checking the math
 
 
 $$
@@ -33,5 +30,3 @@ $$
     \end{array} \right)
 \end{align*}
 $$
-
-Helllo!
