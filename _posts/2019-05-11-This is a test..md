@@ -1,18 +1,21 @@
+
 ---
-title: France, Beinvenue
-description: Just checking the math
-date: 2019-05-08
+title: This is a test.
+description: This is a test
+date: 2019-05-11
 categories:
- - experience
+ - test
 tags:
- - internship
- - france
+ - test
 comments: true
 ---
+
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+
+
 
 # Checking the math
 
@@ -33,3 +36,4 @@ $$
     \end{array} \right)
 \end{align*}
 $$
+
