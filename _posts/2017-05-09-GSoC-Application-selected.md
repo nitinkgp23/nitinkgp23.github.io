@@ -1,6 +1,7 @@
 ---
 title: GSoC Application selected
 date: 2017-05-09
+excerpt:
 categories:
  - GSoC
 tags:

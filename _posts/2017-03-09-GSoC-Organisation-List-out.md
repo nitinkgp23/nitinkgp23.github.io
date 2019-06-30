@@ -1,6 +1,7 @@
 ---
 title: GSoC Organisation List out
 date: 2017-03-09
+excerpt:
 categories:
  - GSoC
 tags:

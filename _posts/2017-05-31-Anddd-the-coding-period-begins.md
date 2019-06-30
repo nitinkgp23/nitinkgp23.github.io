@@ -1,6 +1,7 @@
 ---
 title: Anddd.. The coding period begins!
 date: 2017-05-31
+excerpt: GSoC warm-up blog.
 categories:
  - GSoC
 tags:

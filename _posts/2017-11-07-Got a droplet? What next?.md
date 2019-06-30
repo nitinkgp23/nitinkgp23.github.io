@@ -1,6 +1,6 @@
 ---
 title: Got a droplet? What next?
-description: One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
+excerpt: One of the various tutorials to help myself with repetitive tasks, such as getting a droplet on DO and configuring it.
 date: 2017-11-07
 categories:
  - tutorial

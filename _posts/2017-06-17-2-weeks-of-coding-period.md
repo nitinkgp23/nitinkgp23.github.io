@@ -1,6 +1,7 @@
 ---
 title: 2 weeks of coding period
 date: 2017-06-17
+excerpt: GSoC blog, covering my progress of the work.
 categories:
  - GSoC
 tags:

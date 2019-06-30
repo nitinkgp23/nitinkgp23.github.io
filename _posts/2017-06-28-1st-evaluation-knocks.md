@@ -1,6 +1,7 @@
 ---
 title: 1st evaluation knocks!
 date: 2017-06-28
+excerpt: GSoC blog, covering my progress of the work.
 categories:
  - GSoC
 tags:

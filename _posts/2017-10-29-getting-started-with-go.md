@@ -1,6 +1,6 @@
 ---
 title: Getting started with Go
-description: Go is a modern programming language developed at Google. It is increasingly popular for many applications and at many companies, and offers a robust set of libraries.
+excerpt: Go is a modern programming language developed at Google. It is increasingly popular for many applications and at many companies, and offers a robust set of libraries.
 date: 2017-10-29
 categories:
  - tutorial

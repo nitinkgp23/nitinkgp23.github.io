@@ -1,6 +1,7 @@
 ---
 title: GSoC wrap-up!
 date: 2017-08-19
+excerpt: Wrap-up blog my GSoC project.
 categories:
  - GSoC
 tags:
