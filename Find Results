@@ -1,0 +1,17 @@
+Searching 38 files for "About" (case sensitive)
+
+/Users/nitinchoudhary/Projects/nitinkgp23.github.io/about.md:
+    1  ---
+    2  layout: page
+    3: title: About
+    4  permalink: /
+    5  ---
+
+/Users/nitinchoudhary/Projects/nitinkgp23.github.io/index.html:
+   73          -->
+   74  
+   75:         <a href="https://nitinkgp23.github.io/">About</a> <br>
+   76          <a href="https://nitinkgp23.github.io/posts/">Blog</a> <br>
+   77          <a href="./assets/CV_Nitin.pdf">Resume</a> <br>
+
+2 matches across 2 files
