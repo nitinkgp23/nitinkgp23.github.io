@@ -1,6 +1,6 @@
 ---
 title: CS 229 Notes by Andrew Ng
-description: 
+excerpt: This is a link to pdf's of notes by Andrew Ng following CS 229. I published this because, at most of the websites, the notes are either not indexed properly or there is not enough description for each note, or it's on github and doesn't directly open a pdf in a new tab.
 date: 2019-06-26
 categories:
  - Notes
@@ -14,8 +14,6 @@ comments: true
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-
-# CS 229 Notes by Andrew Ng
 
 This is a link to pdf's of notes by Andrew Ng following CS 229. I published this because, at most of the websites, the notes are either not indexed properly or there is not enough description for each note, or it's on github and doesn't directly open a pdf in a new tab.
 
