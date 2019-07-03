@@ -2,6 +2,7 @@
 title: Home automation
 excerpt: Using arduino to remotely control tubelights and fans through a smartphone.
 date: 2017-03-04
+space: tech
 categories:
  - tutorial
 tags:
