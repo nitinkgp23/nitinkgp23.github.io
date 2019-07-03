@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tech-blogs
-permalink: /posts-tech
+permalink: /posts
 ---
 
 
