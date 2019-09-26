@@ -16,3 +16,9 @@ comments: true
 + Naive Bayes Classifiers: [Blog](https://sebastianraschka.com/Articles/2014_naive_bayes_1.html)
 
 + SVM: [Notes](http://cs229.stanford.edu/notes/cs229-notes3.pdf), [Hard-margin](https://towardsdatascience.com/demystifying-maths-of-svm-13ccfe00091e), [Soft-margin](https://towardsdatascience.com/demystifying-maths-of-svm-part-2-30308a73e072), [Kernel-trick](https://towardsdatascience.com/understanding-support-vector-machine-part-2-kernel-trick-mercers-theorem-e1e6848c6c4d), [Blog](https://shuzhanfan.github.io/2018/05/understanding-mathematics-behind-support-vector-machines/)
+
++ Clustering: [Slides](https://cs.wmich.edu/alfuqaha/summer14/cs6530/lectures/ClusteringAnalysis.pdf)
+
++ Information Theory: [Slides](https://www.cs.ubc.ca/~murphyk/Teaching/CS340-Fall07/infoTheory.pdf)
+
++ Expectation Maximization: [Blog](https://bjlkeng.github.io/posts/the-expectation-maximization-algorithm/)
