@@ -71,90 +71,100 @@ Once all tests are over, its time to start preparing for your interview.
 ## FAQs
 
 1. **Does Department matter ?**
+
     Unfortunately, yes. It matters quite a lot, especially for software profile companies coming in Day 1/2. The difference arises in 2 ways: one, companies opening for CS/ECE/EE/Maths are quite more than other branches, and two, even if companies open for other branches, companies have a bias towards CS/ECE/EE/Maths students while shortlisting them for interviews.
 
     Another difference is, companies have a higher CGPA cutoff to let candidated appear in tests, for other branches, compared to CS/ECE/EE/Maths. For example, a certain company X, but might have a CGPA cutoff of 7.0 for CS/ECE/EE/Maths, but 8.0 for other branches.
 2. **Does CGPA matter ?**
+
     Yes. Having a higher CGPA is always a plus, both while getting shortlisted for interviews and clearing them. Although, you don't necessarily need to have a CGPA of 9.5+, but having a CGPA of 8.5 gives you the ticket to appearing in the tests of all the companies that open for your department.
     
     If you are from CS/ECE/EE/Maths, but have a CGPA <8, you may miss out on some companies, like Samsung Research, Paypal, Apple, Cohesity, Nutanix etc.
     CGPA also matters if you are from non-circuital branches, as discussed above. These branches might have a higher CGPA criteria to appear in the company's tests.
 3. **Does AIR matter ?**
+
     Well, this is a funny question, but 99% of the companies don't ask about your All India Rank in JEE. The other 1% includes trading firms like Quadeye.
 
 -----
 
 ## Resources
+
 ### Coding
+
 Websites:
-    1. [Geeks For Geeks](https://www.geeksforgeeks.org/)
-    2. [Interview Bit](https://www.interviewbit.com/)
-    3. [LeetCode](https://leetcode.com/)
+
+1. [Geeks For Geeks](https://www.geeksforgeeks.org/)
+2. [Interview Bit](https://www.interviewbit.com/)
+3. [LeetCode](https://leetcode.com/)
 
 Books:
-    1. [Cracking the Coding interview](http://www.crackingthecodinginterview.com/) (Must read)
+
+1. [Cracking the Coding interview](http://www.crackingthecodinginterview.com/) (Must read)
 
 Computer-Science:
-    1. [Operating Systems YT playlist](https://www.youtube.com/watch?v=QTQ8zym8Au0&list=PLWPirh4EWFpGkHH9JTKH9KsnfAA471Fhy)
-    2. [System Design YT playlist, by Gaurav Sen](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX)
-    3. [Gate CS Topicwise Notes - GeeksForGeeks](https://www.geeksforgeeks.org/gate-cs-notes-gq/)
+
+1. [Operating Systems YT playlist](https://www.youtube.com/watch?v=QTQ8zym8Au0&list=PLWPirh4EWFpGkHH9JTKH9KsnfAA471Fhy)
+2. [System Design YT playlist, by Gaurav Sen](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX)
+3. [Gate CS Topicwise Notes - GeeksForGeeks](https://www.geeksforgeeks.org/gate-cs-notes-gq/)
 
 Other resources to checkout:
-    1. [LeetCode Weekly contests](https://leetcode.com/contest/)
-    2. [LeetCode questions arranged in order of likes](https://nitinkgp23.github.io/2019/09/25/Leetcode/)
-    3. [Dynamic Programming YT playlist, by Tushar Roy](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
-    4. [Geeks for Geeks Quizzes](https://www.geeksforgeeks.org/geeksquiz-home/)
-    5. [Operating System notes, by Anubhav Jain](https://drive.google.com/drive/folders/1gFCSaiajLFi8S5fPGyrN2TJY8vNn-cdQ?usp=sharing)
-    6. [Some interesting Algo/DS questions ](https://docs.google.com/spreadsheets/d/1TAEzbdrc9j_0N9jGgqeUro5F3OW_nu60s5MdD9t675Q/edit?usp=sharing)
-    7. [CDC Preparation blogs](https://cdc.iitkgp.ac.in/preparations/) (Only accessible via campus network)
+
+1. [LeetCode Weekly contests](https://leetcode.com/contest/)
+2. [LeetCode questions arranged in order of likes](https://nitinkgp23.github.io/2019/09/25/Leetcode/)
+3. [Dynamic Programming YT playlist, by Tushar Roy](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
+4. [Geeks for Geeks Quizzes](https://www.geeksforgeeks.org/geeksquiz-home/)
+5. [Operating System notes, by Anubhav Jain](https://drive.google.com/drive/folders/1gFCSaiajLFi8S5fPGyrN2TJY8vNn-cdQ?usp=sharing)
+6. [Some interesting Algo/DS questions ](https://docs.google.com/spreadsheets/d/1TAEzbdrc9j_0N9jGgqeUro5F3OW_nu60s5MdD9t675Q/edit?usp=sharing)
+7. [CDC Preparation blogs](https://cdc.iitkgp.ac.in/preparations/) (Only accessible via campus network)
 
 ### Quant/ Prob-Stats/ Puzzles
+
 Books:
 
-    1. [50 Challenging Problems in Probability](https://www.amazon.in/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552) (Must solve)
-    2. [Heard on the Street](https://www.amazon.in/dp/0994138636/ref=cm_sw_em_r_mt_dp_tuGCFbCDPMVMG) (Must solve)
-    3. [How to Ace the Brainteaser Interview](https://www.amazon.in/How-Brainteaser-Interview-John-Kador/dp/0071440011)
+1. [50 Challenging Problems in Probability](https://www.amazon.in/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552) (Must solve)
+2. [Heard on the Street](https://www.amazon.in/dp/0994138636/ref=cm_sw_em_r_mt_dp_tuGCFbCDPMVMG) (Must solve)
+3. [How to Ace the Brainteaser Interview](https://www.amazon.in/How-Brainteaser-Interview-John-Kador/dp/0071440011)
 
 Practice basic maths and aptitude questions:
 
-    1. [Pariksha](https://www.pariksha.co/)
-    2. [Prepleaf](https://www.prepleaf.com/)
-    3. [Brilliant](https://brilliant.org/courses/math-quantitative-finance/)
+1. [Pariksha](https://www.pariksha.co/)
+2. [Prepleaf](https://www.prepleaf.com/)
+3. [Brilliant](https://brilliant.org/courses/math-quantitative-finance/)
 
 Puzzles:
 
-    1. [Puzzles from Geeks for Geeks](https://www.geeksforgeeks.org/puzzles/)
-    2. [Puzzles from Interview Bit](https://www.interviewbit.com/puzzles/)
-    3. [CSE Blog](http://www.cseblog.com/)
-    4. [Gurmeet](https://gurmeet.net/puzzles/)
-    5. [The Grey Labyrinth](http://www.greylabyrinth.com/)
-    6. [Nigel Coldwell](https://puzzles.nigelcoldwell.co.uk/)
+1. [Puzzles from Geeks for Geeks](https://www.geeksforgeeks.org/puzzles/)
+2. [Puzzles from Interview Bit](https://www.interviewbit.com/puzzles/)
+3. [CSE Blog](http://www.cseblog.com/)
+4. [Gurmeet](https://gurmeet.net/puzzles/)
+5. [The Grey Labyrinth](http://www.greylabyrinth.com/)
+6. [Nigel Coldwell](https://puzzles.nigelcoldwell.co.uk/)
 
 Other resources to check out:
-    1. [Probablity and Statistics Notes, by Anubhav Jain](https://drive.google.com/drive/folders/0Bx7x8HmM7p_zeDVydHkyOWVUYmM?usp=sharing)
-    2. [Collection of some advance Dice problems](https://drive.google.com/file/d/0BxeC0tA6ooMlN0poTzJhcDdKajVzSXNVSUhpWTl1dWdvWE1F/view?usp=sharing)
+1. [Probablity and Statistics Notes, by Anubhav Jain](https://drive.google.com/drive/folders/0Bx7x8HmM7p_zeDVydHkyOWVUYmM?usp=sharing)
+2. [Collection of some advance Dice problems](https://drive.google.com/file/d/0BxeC0tA6ooMlN0poTzJhcDdKajVzSXNVSUhpWTl1dWdvWE1F/view?usp=sharing)
 
 ### Machine Learning/ Data Science
 
 Books:
 
-    1. [Introduction to Linear Regression analysis](https://www.wiley.com/en-us/Introduction+to+Linear+Regression+Analysis%2C+5th+Edition-p-9780470542811)
+1. [Introduction to Linear Regression analysis](https://www.wiley.com/en-us/Introduction+to+Linear+Regression+Analysis%2C+5th+Edition-p-9780470542811)
 
-    2. [Probablity and Statistics in Engineering, by Hines and Montgomery](https://github.com/Gauraviitkgp/Math-IITKGP-Resources/blob/master/Second%20Year/Sem%204/Probablity/kupdf.com_probability-and-statistics-in-engineering-by-william-w-hines-douglas-c-montgomery-david-m-goldsman-connie-m-borror.pdf)
+2. [Probablity and Statistics in Engineering, by Hines and Montgomery](https://github.com/Gauraviitkgp/Math-IITKGP-Resources/blob/master/Second%20Year/Sem%204/Probablity/kupdf.com_probability-and-statistics-in-engineering-by-william-w-hines-douglas-c-montgomery-david-m-goldsman-connie-m-borror.pdf)
 
 
 Websites/Blogs:
-    1. [ML Resources](https://sgfin.github.io/learning-resources/?fbclid=IwAR038FfwnuXndb5TvlsUVt1TYNkyoiBowKaFmUkoDRDYmXkUe9wtf8bWpeY#cheatsheets)
-    2. [CS 229 Topic-wise notes, by Andrew NG](https://nitinkgp23.github.io/notes/2019/06/26/CS-229-Notes-by-Andrew-Ng/)
-    3. [Interesting Notes and Explanations](https://nitinkgp23.github.io/notes/2019/06/30/Interesting-notes-and-explanations/)
-    4. [Colah's blog](https://colah.github.io/)
+1. [ML Resources](https://sgfin.github.io/learning-resources/?fbclid=IwAR038FfwnuXndb5TvlsUVt1TYNkyoiBowKaFmUkoDRDYmXkUe9wtf8bWpeY#cheatsheets)
+2. [CS 229 Topic-wise notes, by Andrew NG](https://nitinkgp23.github.io/notes/2019/06/26/CS-229-Notes-by-Andrew-Ng/)
+3. [Interesting Notes and Explanations](https://nitinkgp23.github.io/notes/2019/06/30/Interesting-notes-and-explanations/)
+4. [Colah's blog](https://colah.github.io/)
 
 Courses:
-    1. [Machine Learning, by Andrew NG - Coursera](https://www.coursera.org/learn/machine-learning)
-    2. [DeepLearning.ai](https://www.coursera.org/specializations/deep-learning)
-    3. [CS229: Machine Learning - Stanford](http://cs229.stanford.edu/) (Advance)
-    4. [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) (Advance)
-    5. [CS224n: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/) (Advance)
+1. [Machine Learning, by Andrew NG - Coursera](https://www.coursera.org/learn/machine-learning)
+2. [DeepLearning.ai](https://www.coursera.org/specializations/deep-learning)
+3. [CS229: Machine Learning - Stanford](http://cs229.stanford.edu/) (Advance)
+4. [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) (Advance)
+5. [CS224n: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/) (Advance)
     
 ### Miscellaneous
 
