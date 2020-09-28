@@ -108,18 +108,21 @@ Other resources to checkout:
     6. [Some interesting Algo/DS questions ](https://docs.google.com/spreadsheets/d/1TAEzbdrc9j_0N9jGgqeUro5F3OW_nu60s5MdD9t675Q/edit?usp=sharing)
     7. [CDC Preparation blogs](https://cdc.iitkgp.ac.in/preparations/) (Only accessible via campus network)
 
-### Quant/Prob-Stats/Puzzles
+### Quant/ Prob-Stats/ Puzzles
 Books:
+
     1. [50 Challenging Problems in Probability](https://www.amazon.in/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552) (Must solve)
     2. [Heard on the Street](https://www.amazon.in/dp/0994138636/ref=cm_sw_em_r_mt_dp_tuGCFbCDPMVMG) (Must solve)
     3. [How to Ace the Brainteaser Interview](https://www.amazon.in/How-Brainteaser-Interview-John-Kador/dp/0071440011)
 
 Practice basic maths and aptitude questions:
+
     1. [Pariksha](https://www.pariksha.co/)
     2. [Prepleaf](https://www.prepleaf.com/)
     3. [Brilliant](https://brilliant.org/courses/math-quantitative-finance/)
 
 Puzzles:
+
     1. [Puzzles from Geeks for Geeks](https://www.geeksforgeeks.org/puzzles/)
     2. [Puzzles from Interview Bit](https://www.interviewbit.com/puzzles/)
     3. [CSE Blog](http://www.cseblog.com/)
@@ -134,8 +137,11 @@ Other resources to check out:
 ### Machine Learning/ Data Science
 
 Books:
+
     1. [Introduction to Linear Regression analysis](https://www.wiley.com/en-us/Introduction+to+Linear+Regression+Analysis%2C+5th+Edition-p-9780470542811)
+
     2. [Probablity and Statistics in Engineering, by Hines and Montgomery](https://github.com/Gauraviitkgp/Math-IITKGP-Resources/blob/master/Second%20Year/Sem%204/Probablity/kupdf.com_probability-and-statistics-in-engineering-by-william-w-hines-douglas-c-montgomery-david-m-goldsman-connie-m-borror.pdf)
+
 
 Websites/Blogs:
     1. [ML Resources](https://sgfin.github.io/learning-resources/?fbclid=IwAR038FfwnuXndb5TvlsUVt1TYNkyoiBowKaFmUkoDRDYmXkUe9wtf8bWpeY#cheatsheets)
