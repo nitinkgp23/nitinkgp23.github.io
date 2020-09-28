@@ -31,23 +31,26 @@ A good time to start your placement preparation is 5 months prior to your interv
 
 The three most important resources for anyone to prepare for a coding profile are Geeks for Geeks, LeetCode and InterviewBit. I will suggest you to use GeeksForGeeks as a handbook and your go-to guide for understanding the theory and looking at standard solutions. LeetCode and InterviewBit should be your go-to point for solving questions. 
 
-1. **GeeksForGeeks**
+1. [Geeks For Geeks](https://www.geeksforgeeks.org/)
 
     Go through GeeksForGeeks thoroughly, especially Data Strucutres and Algorithms. Read about linked-lists, stacks and queues, and trees. Each of these topics have a ton of questions listed. Go through some of the questions and their solutions for each topic. You will understand how problems are solved. Do not attempt to solve them on your own, just go through to get an overview of the data strucutre or algorithm.
 
     Keep visiting this website whenever you are stuck, or your concept regarding a certain data-strucuture/algorithm isn't clear. 
 
-2. **InterviewBit**
+
+2. [Interview Bit](https://www.interviewbit.com/)
 
     InterviewBit has a lesser number of questions and are more focused, so I will strongly recommend to finish InterviewBit atleast once. Aim to have a score > 25k.
 
-3. **LeetCode**
+
+3. [LeetCode](https://leetcode.com/)
 
     Leetcode has a lot more questions than InterviewBit (~1.5k). You obviously don't need to solve all of them. I suggest, to try to solve atleast 150-200 questions (50 easy, 100 medium, 30 hard). You will find most of the questions already solved in InterviewBit, and this will be a revision for you.
 
-    Top 200 LeetCode questions: The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of all LeetCode questions arranged in order of likes. More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
+    [Top 200 LeetCode questions](https://nitinkgp23.github.io/2019/09/25/Leetcode/): The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of all LeetCode questions arranged in order of likes. More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
 
-    LeetCode weekly contest: Once you have a good hold on concepts, and have solved a good number of questions ranging from all topics, you should start to have a feel of what actual tests are like. LeetCode weekly contest is a good way to solve new questions and with the timer running.
+    [LeetCode weekly contest](https://leetcode.com/contest/): Once you have a good hold on concepts, and have solved a good number of questions ranging from all topics, you should start to have a feel of what actual tests are like. LeetCode weekly contest is a good way to solve new questions and with the timer running.
+
 
 **Machine Learning/Data Science**
 
@@ -61,7 +64,7 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 
     Once tests begin, stop solving new questions from LeetCode. This is the time to:
     + Revise all standard questions/concepts. Revise the notes that you prepared from your Phase I.
-    + Solve questions from Placement Docs. You will be surprised to see the previous year questions that company asked. You will have seen none of them in LeetCode/InterviewBit, and this may seem a bit scary. But don't worry. Questions that are asked in placement tests are generally new, which you haven't seen before, and hence you need to practice these questions. 
+    + Solve questions from Placement Docs. You will be surprised to see the previous year questions that company asked. You will have seen none of them in LeetCode/InterviewBit, and this may seem a bit scary. But don't worry. Questions that are asked in placement tests are generally new, which you haven't seen before, and hence you need to practice these questions. Placement Docs are regularly updated in this [facebook group](https://www.facebook.com/groups/1540488506008368/).
 
 2. **Interview preparation**
 
@@ -72,8 +75,12 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
     + GfG ramp-up
     + Revise basic data strucutres and thier implementation
 
-    
+
 ### Phase III
+
+-----
+
+## Some tips and tricks
 
 -----
 
@@ -85,12 +92,14 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 
     Another difference is, companies have a higher CGPA cutoff to let candidated appear in tests, for other branches, compared to CS/ECE/EE/Maths. For example, a certain company X, but might have a CGPA cutoff of 7.0 for CS/ECE/EE/Maths, but 8.0 for other branches.
 
+
 2. **Does CGPA matter ?**
 
     Yes. Having a higher CGPA is always a plus, both while getting shortlisted for interviews and clearing them. Although, you don't necessarily need to have a CGPA of 9.5+, but having a CGPA of 8.5 gives you the ticket to appearing in the tests of all the companies that open for your department.
     
     If you are from CS/ECE/EE/Maths, but have a CGPA <8, you may miss out on some companies, like Samsung Research, Paypal, Apple, Cohesity, Nutanix etc.
     CGPA also matters if you are from non-circuital branches, as discussed above. These branches might have a higher CGPA criteria to appear in the company's tests.
+
 
 3. **Does AIR matter ?**
 
