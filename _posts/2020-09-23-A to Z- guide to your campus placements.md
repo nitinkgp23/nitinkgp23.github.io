@@ -6,7 +6,7 @@ categories:
 tags: placement, interview
 comments: true
 ---
-![](https://github.com/nitinkgp23/nitinkgp23.github.io/tree/master/assets/images/main-building.jpg "Main building")
+![main-building](https://github.com/nitinkgp23/nitinkgp23.github.io/tree/master/assets/images/main-building.jpg "Main building")
 Welcome to the A to Z⁻ guide for cracking your CDC Placements, (or any coding interview preparation for that matter). This post has been due a long time, and I am glad, I am finally publishing this. Please note that this guide is not exclusive, and is only based on my personal experience, and those of my friends, who appeared in the placement process in December 2019. I have tried to cover almost everything that I experienced in the journey, but might obviously have missed some important things, and hence I don't claim this guide to be A-Z but instead A-Z⁻ (approaching Z from the left).
 
 ## My Background
@@ -104,28 +104,30 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 2. **Interview preparation**
 
     Once all tests are over, its time to start preparing for your interview.
-    + Prepare your Resume
+    
+    **Prepare your Resume**
 
-    I reiterate *Prepare your resume very very well.* This is one part, that can *break* your interview. Not all companies have a specific 'Resume round', but your interviewer might glance at your resume in a coding round and throw you a question based on one of your projects that you did, or a course that you took. Remember, you can afford to not answer a coding question but you *cannot* afford to not answer a question based on your internship/project. That puts a bad impression on the interviewer.
-    Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all the courses that you mentioned on your resume.
-
-
-    + Stop coding; Start solving questions on paper
-
-    Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you did't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
+    + I reiterate *Prepare your resume very very well.* This is one part, that can *break* your interview. Not all companies have a specific 'Resume round', but your interviewer might glance at your resume in a coding round and throw you a question based on one of your projects that you did, or a course that you took. Remember, you can afford to not answer a coding question but you *cannot* afford to not answer a question based on your internship/project. That puts a bad impression on the interviewer.
+    
+    + Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all the courses that you mentioned on your resume.
 
 
-    + InterviewBit Mock Interview
+    **Stop coding; Start solving questions on paper**
 
-    InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting a actual feel of the interview.
+    + Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you did't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
 
-    + Basic Data-Structures ramp-up
 
-    Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can be easily be asked in an interview.  
+    **InterviewBit Mock Interview**
 
-    + Geeks For Geeks Interview Questions
+    + InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting a actual feel of the interview.
 
-    Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode.
+    **Basic Data-Structures ramp-up**
+
+    + Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can be easily be asked in an interview.  
+
+    **Geeks For Geeks Interview Questions**
+
+    + Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode.
 
 
 
@@ -149,7 +151,7 @@ Also, once you have an offer from a company, you *cannot appear for an interview
 
 ## Some Tips and Tricks
 
-
+----
 
 ## FAQs
 
