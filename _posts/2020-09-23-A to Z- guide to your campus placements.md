@@ -35,7 +35,7 @@ The three most important resources for anyone to prepare for a coding profile ar
 
     Go through GeeksForGeeks thoroughly, especially Data Strucutres and Algorithms. Read about linked-lists, stacks and queues, and trees. Each of these topics have a ton of questions listed. Go through some of the questions and their solutions for each topic. You will understand how problems are solved. Do not attempt to solve them on your own, just go through to get an overview of the data strucutre or the algorithm.
 
-    Keep visiting this website whenever you are stuck, or your concept regarding a certain data-strucuture/algorithm isn't clear. 
+    Keep visiting this website whenever you are stuck, or your concept regarding a certain data-strucuture/algorithm isn't clear.
 
 
 
@@ -45,6 +45,7 @@ The three most important resources for anyone to prepare for a coding profile ar
     InterviewBit questions are more focused to each topic, and this will help you cover each topic one by one. This is especially important when you are starting out, and you may not which questions belong to which topic. So, I will strongly recommend to finish InterviewBit atleast once. Aim to have a score > 25k.
 
     **Tip**: Don't get discouraged while you are solving questions from 'Arrays'. The questions in that section are tougher than usual. You will find it easy once you move down to Linked Lists and Trees.
+
 
 
 
@@ -66,10 +67,10 @@ The three most important resources for anyone to prepare for a coding profile ar
 Some points to note:
 
 + Dynamic Programming is the most important topic to prepare among all. Pay special attention to this, and solve as many questions as you can related to DP. 
-+ Questions from Binary Search can sometimes be tricky, and be applied in unusual places. You will/have come across [Painter's Partition Problem](https://geekstocode.com/the-painters-partition-problem/)
++ Questions from Binary Search can sometimes be tricky, and be applied in unusual places. You will/have come across [Painter's Partition Problem](https://geekstocode.com/the-painters-partition-problem/).
 + [Topological Sort](https://www.geeksforgeeks.org/topological-sorting/) and [Union-find](https://www.geeksforgeeks.org/union-find/) are quite important in Graphs.
 + [Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) is another important topic to look into. This may be a bit advance, but is important for interviews.
-+ Binary Index Trees and Segment Trees are quite advance, and will not generally asked in an interview. (Except, maybe Google?)
++ Binary Index Trees and Segment Trees are quite advance, and will not generally be asked in an interview. (Except, maybe Google?)
 
 
 **Machine Coding**
@@ -88,10 +89,6 @@ A good rule of hand, is to go in as much depth as you can, *in those topics whic
 Another important point to note is that companies coming for 'Data Scientist' roles, do **not** necessarily ask questions from Data Science in their shortlisting test. Almost all companies coming for Data Science profiles (except Microsoft DS, in our year) had a coding round too where questions were asked from Algo/DS. Hence it is important for you to get your coding strong, as this is almost always the shortlisting criteria. Data Science knowledge is more of a requirement during your interview.
 
 
-**Quant**
-
-
-
 
 ### Phase II
 
@@ -100,24 +97,33 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 1. **Placement tests**
 
     Once tests begin, stop solving new questions from LeetCode. This is the time to:
-    + Revise all standard questions/concepts. Revise the notes that you prepared from your Phase I.
-    + Solve questions from Placement Docs. You will be surprised to see the previous year questions that company asked. You will have seen none of them in LeetCode/InterviewBit, and this may seem a bit scary. But don't worry. Questions that are asked in placement tests are generally new, which you haven't seen before, and hence you need to practice these questions. Placement Docs are regularly updated in this [facebook group](https://www.facebook.com/groups/1540488506008368/).
+    + Revise all standard questions/concepts. Revise the notes that you prepared from your Phase I. Go through questions that you might have bookmarked, or you wanted to take another look. 
+    + Solve questions from Placement Docs. You will be surprised to see the previous year questions that company asked. You will have seen none of them in LeetCode/InterviewBit, and this may seem a bit scary. But don't worry. Questions that are asked in placement tests are generally new, which you haven't seen before. Going through previous year questions will help you have an idea on what kind of questions to expect in test. Placement Docs are regularly updated in this [facebook group](https://www.facebook.com/groups/1540488506008368/).
 
 2. **Interview preparation**
 
     Once all tests are over, its time to start preparing for your interview.
     + Prepare your Resume
+        I reiterate *Prepare your resume very very well.* This is one part, that can *break* your interview. Not all companies have a specific 'Resume round', but your interviewer might glance at your resume in a coding round and throw you a question based on one of your projects that you did, or a course that you took. Remember, you can afford to not answer a coding question but you *cannot* afford to not answer a question based on your internship/project. That puts a bad impression on the interviewer.
+        Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all the courses that you mentioned on your resume.
+
+
     + Stop coding; Start solving questions on paper
+        Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you did't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
+
+
     + InterviewBit Mock Interview
-    + GfG ramp-up
-    + Revise basic data strucutres and thier implementation
+        InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting a actual feel of the interview.
+
+    + Basic Data-Structures ramp-up
+        Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can be easily be asked in an interview.
+
+    + Geeks For Geeks Interview Questions
+        Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode.
+
 
 
 ### Phase III
-
------
-
-## Some tips and tricks
 
 -----
 
