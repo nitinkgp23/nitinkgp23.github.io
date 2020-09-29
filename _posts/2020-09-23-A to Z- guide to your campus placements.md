@@ -6,7 +6,11 @@ categories:
 tags: placement, interview
 comments: true
 ---
-![main-building](/assets/images/main-building.jpg)
+<p align="center">
+<img src="/assets/images/main-building.jpg" width="200">
+</p>
+<!-- ![main-building](/assets/images/main-building.jpg) -->
+
 Welcome to the A to Z⁻ guide for cracking your CDC Placements, (or any coding interview preparation for that matter). This post has been due a long time, and I am glad, I am finally publishing this. Please note that this guide is not exclusive, and is only based on my personal experience, and those of my friends, who appeared in the placement process in December 2019. I have tried to cover almost everything that I experienced in the journey, but might obviously have missed some important things, and hence I don't claim this guide to be A-Z but instead A-Z⁻ (approaching Z from the left).
 
 ## My Background
