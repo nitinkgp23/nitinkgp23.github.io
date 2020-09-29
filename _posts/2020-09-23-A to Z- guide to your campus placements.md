@@ -7,7 +7,7 @@ tags: placement, interview
 comments: true
 ---
 <p align="center">
-<img src="/assets/images/main-building.jpg" width="200">
+<img src="/assets/images/main-building.jpg" width="400">
 </p>
 <!-- ![main-building](/assets/images/main-building.jpg) -->
 
