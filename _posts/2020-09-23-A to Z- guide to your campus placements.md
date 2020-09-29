@@ -21,40 +21,77 @@ Also, it is important to mention that prior to 5 months before my interview, I h
 
 ## Crux
 
-All right, without further ado, let's directly come to the point. I have divided my blog (and the whole preparation timeline) to 3 phases. Phase I extends from the time you start your preparation to 1.5 months (or, 1 month if you dont have enough time) prior to your interview. Phase II lies from 1.5 months (or, 1 month) before your interview to 2 days prior to your interview. Phase III is the grand finale, the 2 days prior to your interview to the time you had an offer in your hand.
+All right, without further ado, let's directly cut to the chase. I have divided my blog (and the whole preparation timeline) to 3 phases. Phase I extends from the time you start your preparation to 1.5 months (or, 1 month if you dont have enough time) prior to your interview. Phase II lies from 1.5 months (or, 1 month) before your interview to 2 days prior to your interview. Phase III is the grand finale, the 2 days prior to your interview to the time you had an offer in your hand.
 
 ### Phase I
 
-A good time to start your placement preparation is 5 months prior to your interview, and so, here I will consider the start of this phase to be this date. If you happen to start the preparation late, do not worry. You can skip a few things that are mentioned here, and plan it accordingly.
+A good time to start your placement preparation is 5 months prior to your interview, and so, here I will consider the start of Phase I to be this date. If you happen to start the preparation late, do not worry. You can skip a few things that are mentioned here, and plan it accordingly.
 
 **Coding**
 
 The three most important resources for anyone to prepare for a coding profile are Geeks for Geeks, LeetCode and InterviewBit. I will suggest you to use GeeksForGeeks as a handbook and your go-to guide for understanding the theory and looking at standard solutions. LeetCode and InterviewBit should be your go-to point for solving questions. 
 
-1. [Geeks For Geeks](https://www.geeksforgeeks.org/)
+1. [**Geeks For Geeks**](https://www.geeksforgeeks.org/)
 
-    Go through GeeksForGeeks thoroughly, especially Data Strucutres and Algorithms. Read about linked-lists, stacks and queues, and trees. Each of these topics have a ton of questions listed. Go through some of the questions and their solutions for each topic. You will understand how problems are solved. Do not attempt to solve them on your own, just go through to get an overview of the data strucutre or algorithm.
+    Go through GeeksForGeeks thoroughly, especially Data Strucutres and Algorithms. Read about linked-lists, stacks and queues, and trees. Each of these topics have a ton of questions listed. Go through some of the questions and their solutions for each topic. You will understand how problems are solved. Do not attempt to solve them on your own, just go through to get an overview of the data strucutre or the algorithm.
 
     Keep visiting this website whenever you are stuck, or your concept regarding a certain data-strucuture/algorithm isn't clear. 
 
 
-2. [Interview Bit](https://www.interviewbit.com/)
 
-    InterviewBit has a lesser number of questions and are more focused, so I will strongly recommend to finish InterviewBit atleast once. Aim to have a score > 25k.
+2. [**Interview Bit**](https://www.interviewbit.com/)
+
+    InterviewBit is the best place to start solving questions. All questions are divided into certain sections, and it helps you to do an efficient topic-wise preparation. It starts with easier topics like Arrays and Linked Lists and then proceeds to Trees and DP and ends with Graphs. Each section has a short tutorial to help you clear the syntax and other basic concepts.
+    InterviewBit questions are more focused to each topic, and this will help you cover each topic one by one. This is especially important when you are starting out, and you may not which questions belong to which topic. So, I will strongly recommend to finish InterviewBit atleast once. Aim to have a score > 25k.
+
+    **Tip**: Don't get discouraged while you are solving questions from 'Arrays'. The questions in that section are tougher than usual. You will find it easy once you move down to Linked Lists and Trees.
 
 
-3. [LeetCode](https://leetcode.com/)
+
+3. [**LeetCode**](https://leetcode.com/)
 
     Leetcode has a lot more questions than InterviewBit (~1.5k). You obviously don't need to solve all of them. I suggest, to try to solve atleast 150-200 questions (50 easy, 100 medium, 30 hard). You will find most of the questions already solved in InterviewBit, and this will be a revision for you.
 
+
+    LeetCode has a different performace measuring system than InterviewBit. In LeetCode, you should strive for having greater than 80 percentile score on your time and space. **LeetCode is the best place to find the best solutions to any question**. Just head over to 'Discussion' section of a question, and find the solutions that are voted best. Going through these will help you improve the quality of your code, and the way you approach a problem.
+
+
     [Top 200 LeetCode questions](https://nitinkgp23.github.io/2019/09/25/Leetcode/): The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of all LeetCode questions arranged in order of likes. More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
+
 
     [LeetCode weekly contest](https://leetcode.com/contest/): Once you have a good hold on concepts, and have solved a good number of questions ranging from all topics, you should start to have a feel of what actual tests are like. LeetCode weekly contest is a good way to solve new questions and with the timer running.
 
 
-**Machine Learning/Data Science**
+
+Some points to note:
+
++ Dynamic Programming is the most important topic to prepare among all. Pay special attention to this, and solve as many questions as you can related to DP. 
++ Questions from Binary Search can sometimes be tricky, and be applied in unusual places. You will/have come across [Painter's Partition Problem](https://geekstocode.com/the-painters-partition-problem/)
++ [Topological Sort](https://www.geeksforgeeks.org/topological-sorting/) and [Union-find](https://www.geeksforgeeks.org/union-find/) are quite important in Graphs.
++ [Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) is another important topic to look into. This may be a bit advance, but is important for interviews.
++ Binary Index Trees and Segment Trees are quite advance, and will not generally asked in an interview. (Except, maybe Google?)
+
+
+**Machine Coding**
+
+Some companies in their interviews ask you to design simple applications on a whiteboard. You are expected to know how Object Oriented system works, and how to write modular code. For practice, you can try designing [Splitwise](https://www.splitwise.com/), [Trello](https://trello.com/en) or [Snake and Ladder](https://en.wikipedia.org/wiki/Snakes_and_Ladders).
+
+Have a look at this [website](https://workat.tech/machine-coding) to get some idea about what is expected of you in a machine coding round.
+
+
+**Machine Learning/ Data Science**
+
+For preparing for Data Science roles, there is no one fixed source. My recommendation is to prepare a list of topics to cover, and study each topic separately. The amount of depth you should go into for each topic varies based on the company. Some companies expect you to understand the derivations behind each equation governing the certain technique and some companies will only care whether you know the technique and how to apply them in practice.
+
+A good rule of hand, is to go in as much depth as you can, *in those topics which you have mentioned in your resume*. For example, if you have mentioned SVM in your resume, you are expected to know what margins and kernel trick are (with, the maths governing it!). For things you have not mentioned in your resume, you should have a breadth of knowledge, and should know which techniques are to be applied in which cases, and the various drawbacks and advantages of the techniques. To achieve a *breadth of knowledge*, my recommendation is to read as many ML-related blogs as possible.
+
+Another important point to note is that companies coming for 'Data Scientist' roles, do **not** necessarily ask questions from Data Science in their shortlisting test. Almost all companies coming for Data Science profiles (except Microsoft DS, in our year) had a coding round too where questions were asked from Algo/DS. Hence it is important for you to get your coding strong, as this is almost always the shortlisting criteria. Data Science knowledge is more of a requirement during your interview.
+
 
 **Quant**
+
+
+
 
 ### Phase II
 
