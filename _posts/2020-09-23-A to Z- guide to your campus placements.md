@@ -6,6 +6,7 @@ categories:
 tags: placement, interview
 comments: true
 ---
+![](https://github.com/nitinkgp23/nitinkgp23.github.io/tree/master/assets/images/main-building.jpg "Main building")
 Welcome to the A to Z⁻ guide for cracking your CDC Placements, (or any coding interview preparation for that matter). This post has been due a long time, and I am glad, I am finally publishing this. Please note that this guide is not exclusive, and is only based on my personal experience, and those of my friends, who appeared in the placement process in December 2019. I have tried to cover almost everything that I experienced in the journey, but might obviously have missed some important things, and hence I don't claim this guide to be A-Z but instead A-Z⁻ (approaching Z from the left).
 
 ## My Background
@@ -51,7 +52,7 @@ The three most important resources for anyone to prepare for a coding profile ar
 
 3. [**LeetCode**](https://leetcode.com/)
 
-    Leetcode has a lot more questions than InterviewBit (~1.5k). You obviously don't need to solve all of them. I suggest, to try to solve atleast 150-200 questions (50 easy, 100 medium, 30 hard). You will find most of the questions already solved in InterviewBit, and this will be a revision for you.
+    Leetcode has a lot more questions than InterviewBit (~ 1.5k). You obviously don't need to solve all of them. I suggest, to try to solve atleast 150-200 questions (50 easy, 100 medium, 30 hard). You will find most of the questions already solved in InterviewBit, and this will be a revision for you.
 
 
     LeetCode has a different performace measuring system than InterviewBit. In LeetCode, you should strive for having greater than 80 percentile score on your time and space. **LeetCode is the best place to find the best solutions to any question**. Just head over to 'Discussion' section of a question, and find the solutions that are voted best. Going through these will help you improve the quality of your code, and the way you approach a problem.
@@ -104,28 +105,51 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 
     Once all tests are over, its time to start preparing for your interview.
     + Prepare your Resume
-        I reiterate *Prepare your resume very very well.* This is one part, that can *break* your interview. Not all companies have a specific 'Resume round', but your interviewer might glance at your resume in a coding round and throw you a question based on one of your projects that you did, or a course that you took. Remember, you can afford to not answer a coding question but you *cannot* afford to not answer a question based on your internship/project. That puts a bad impression on the interviewer.
-        Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all the courses that you mentioned on your resume.
+
+    I reiterate *Prepare your resume very very well.* This is one part, that can *break* your interview. Not all companies have a specific 'Resume round', but your interviewer might glance at your resume in a coding round and throw you a question based on one of your projects that you did, or a course that you took. Remember, you can afford to not answer a coding question but you *cannot* afford to not answer a question based on your internship/project. That puts a bad impression on the interviewer.
+    Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all the courses that you mentioned on your resume.
 
 
     + Stop coding; Start solving questions on paper
-        Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you did't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
+
+    Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you did't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
 
 
     + InterviewBit Mock Interview
-        InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting a actual feel of the interview.
+
+    InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting a actual feel of the interview.
 
     + Basic Data-Structures ramp-up
-        Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can be easily be asked in an interview.
+
+    Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can be easily be asked in an interview.  
 
     + Geeks For Geeks Interview Questions
-        Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode.
+
+    Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode.
 
 
 
 ### Phase III
 
+Welcome to the grand finale! Now is the time to stop learning new things, and revise whatever you have learnt uptil this point.
+
+**Before Interview**
+
+Prepare a short note on basic interview questions like your introduction, your strength and weaknesses etc. These are generic questions, and are not usually asked in Software development profile, but it is always good to be prepared.
+
+Brush up your resume, revise your notes, and keep calm.
+
+**During Interview**
+
+The interview days can be quite tiring. Be prepared. Have a good night's sleep because the next days can be very tiring. Plan your companies beforehand according to your shortlists. If you have more than 2 shortlists in a company in one half of the day, you will have to prioritize. Talk to placecoms about your preference, and they will try their best to accomodate you accordingly. 
+
+Also, once you have an offer from a company, you *cannot appear for an interview for any other company*, even if it is in the same day or the same half. Therefore, prioritizing becomes quite important. You do not want to sit for an interview, just "for trying it out". If you happen to get selected, you cannot back down.
+
 -----
+
+## Some Tips and Tricks
+
+
 
 ## FAQs
 
