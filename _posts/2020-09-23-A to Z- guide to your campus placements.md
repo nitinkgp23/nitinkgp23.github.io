@@ -3,13 +3,12 @@ title: A to Z⁻ guide to your campus placements
 excerpt: An extensive collection of resources and tips to prepare for your campus placements in Tech profile
 date: 2020-09-23
 categories:
-tags: placement, interview
+tags: placement, interview, coding
 comments: true
 ---
 <p align="center">
-<img src="/assets/images/main-building.jpg" width="400">
+<img src="/assets/images/placement.jpg" width="400">
 </p>
-<!-- ![main-building](/assets/images/main-building.jpg) -->
 
 Welcome to the A to Z⁻ guide for cracking your CDC Placements, (or any coding interview preparation for that matter). This post has been due a long time, and I am glad, I am finally publishing this. Please note that this guide is not exclusive, and is only based on my personal experience, and those of my friends, who appeared in the placement process in December 2019. I have tried to cover almost everything that I experienced in the journey, but might obviously have missed some important things, and hence I don't claim this guide to be A-Z but instead A-Z⁻ (approaching Z from the left).
 
@@ -56,16 +55,18 @@ The three most important resources for anyone to prepare for a coding profile ar
 
 3. [**LeetCode**](https://leetcode.com/)
 
-    Leetcode has a lot more questions than InterviewBit (~ 1.5k). You obviously don't need to solve all of them. I suggest, to try to solve atleast 150-200 questions (50 easy, 100 medium, 30 hard). You will find most of the questions already solved in InterviewBit, and this will be a revision for you.
+    Leetcode has a lot more questions (~ 1.5k) compared to InterviewBit (~ 0.4k). You obviously don't need to solve all of them. I suggest, to try to solve atleast 150-200 questions (50 easy, 100 medium, 30 hard). You will find most of the questions already solved in InterviewBit, and this will be a revision for you.
 
 
-    LeetCode has a different performace measuring system than InterviewBit. In LeetCode, you should strive for having greater than 80 percentile score on your time and space. **LeetCode is the best place to find the best solutions to any question**. Just head over to 'Discussion' section of a question, and find the solutions that are voted best. Going through these will help you improve the quality of your code, and the way you approach a problem.
+    LeetCode has a different performace measuring system than InterviewBit. In LeetCode, you should strive for having greater than 80 percentile score on your time and space.
+
+    **LeetCode is the best place to find the best solutions to any question**. Just head over to 'Discussion' section of a question, and find the solutions that are voted best. Going through these will help you improve the quality of your code, and the way you approach a problem.
 
 
-    [Top 200 LeetCode questions](https://nitinkgp23.github.io/2019/09/25/Leetcode/): The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of all LeetCode questions arranged in order of likes. More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
+    + [Top 200 LeetCode questions](https://nitinkgp23.github.io/2019/09/25/Leetcode/): The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of [all LeetCode questions arranged in order of likes](https://nitinkgp23.github.io/2019/09/25/Leetcode/). More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
 
 
-    [LeetCode weekly contest](https://leetcode.com/contest/): Once you have a good hold on concepts, and have solved a good number of questions ranging from all topics, you should start to have a feel of what actual tests are like. LeetCode weekly contest is a good way to solve new questions and with the timer running.
+    + [LeetCode weekly contest](https://leetcode.com/contest/): Once you have a good hold on concepts, and have solved a good number of questions ranging from all topics, you should start to have a feel of what actual tests are like. LeetCode weekly contest is a good way to solve new questions and with the timer running.
 
 
 
@@ -113,49 +114,68 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 
     + I reiterate *Prepare your resume very very well.* This is one part, that can *break* your interview. Not all companies have a specific 'Resume round', but your interviewer might glance at your resume in a coding round and throw you a question based on one of your projects that you did, or a course that you took. Remember, you can afford to not answer a coding question but you *cannot* afford to not answer a question based on your internship/project. That puts a bad impression on the interviewer.
     
-    + Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all the courses that you mentioned on your resume.
+    + Prepare short notes based on each project/internship that you did. Go back to your notes from the internship or the presentation, and study them well. Understand all techniques that you used at that time. Prepare a *critical analysis* on why you chose to go with a certain technique and not with something else. Revise all courses that you mentioned on your resume.
 
 
     **Stop coding; Start solving questions on paper**
 
-    + Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you did't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
+    + Start practising solving questions on paper. You will notice that this is not entirely same as writing code on a code editor. You will have to think of the solution beforehand, have a clear understanding of the approach, and only then start converting it on paper. Try to keep the code as clean as possible: making it messy implies you didn't have a clear approach in your mind when you started. Also, *no psuedo code*. Write the code in proper syntax.
 
 
     **InterviewBit Mock Interview**
 
-    + InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting a actual feel of the interview.
+    + InterviewBit also has a Mock Interview feature where you can schedule interviews with a stranger, and you take turns interviewing each other. This proves to be fruitful in getting an actual feel of the interview.
 
     **Basic Data-Structures ramp-up**
 
-    + Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can be easily be asked in an interview.  
+    + Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can easily be asked in an interview.  
 
     **Geeks For Geeks Interview Questions**
 
-    + Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode.
+    + Go through common [company-wise interview questions](https://www.geeksforgeeks.org/must-coding-questions-company-wise/) from Geeks for Geeks. During the hiring season, common ongoing interview questions are also updated in LeetCode's Discussion section.
 
 
 
 ### Phase III
 
-Welcome to the grand finale! Now is the time to stop learning new things, and revise whatever you have learnt uptil this point.
+Welcome to the grand finale! Now is the time to stop learning new things, and revise whatever you have learnt up till this point.
 
 **Before Interview**
 
 Prepare a short note on basic interview questions like your introduction, your strength and weaknesses etc. These are generic questions, and are not usually asked in Software development profile, but it is always good to be prepared.
 
-Brush up your resume, revise your notes, and keep calm.
+Brush up your resume well. Form a peer group, and take turns asking each other questions from the resume. Try explaining each of your projects from scratch to a friend, and see if you are able to do a good job.
+
+Revise your notes, and go through concepts/formulae/important questions that you have noted up till this point.
 
 **During Interview**
 
 The interview days can be quite tiring. Be prepared. Have a good night's sleep because the next days can be very tiring. Plan your companies beforehand according to your shortlists. If you have more than 2 shortlists in a company in one half of the day, you will have to prioritize. Talk to placecoms about your preference, and they will try their best to accomodate you accordingly. 
 
-Also, once you have an offer from a company, you *cannot appear for an interview for any other company*, even if it is in the same day or the same half. Therefore, prioritizing becomes quite important. You do not want to sit for an interview, just "for trying it out". If you happen to get selected, you cannot back down.
+Also, once you have an offer from a company, you *cannot appear for an interview for any other company*, even if it is in the same day or the same half. Therefore, prioritizing becomes quite important. You do not want to sit for an interview, just "for trying it out". If you happen to get selected, you cannot back down. (*Specific to KGP*)
+
+
+The most important factor to keep in mind at this point is, *Hope for the best, prepare for the worst*. Give your 100% in the interview, but do not get disappointed if you happen to get rejected. There will be more interviews to come, hence it is important to maintain your composure. Do not get disheartened. 
 
 -----
 
 ## Some Tips and Tricks
 
-----
++ When placement tests are ongoing, keep in touch with your friends from other IITs/NITs, and strictly follow the Placement Docs updated in the [facebook group](https://www.facebook.com/groups/1540488506008368/). Companies tend to repeat questions across campus tests, hence can be great help if the very same question pops up in your test too.
+
++ Do not copy code from your friends or directly from other websites like Geeks for Geeks. Some companies have a very strict policy against plagiarism, and they will outright reject you if they find your code plagiarized.
+
++ Whether you can use STL or not in the coding round varies between company to company. 90% of the companies allow you to use STL, but compilers provided by some other do not allow you to do so. (In our year, Microsoft and Google were among those.) Hence, before placement tests begin, go back to the basics, and understand how to take input from console, difference between C-style and C++ strings or how to use pointers (and not references!.
+
++ Sometimes, during the test, you will write your most optimal solution to the problem, but still all test cases won't pass. Maybe the company expects a better solution from you or maybe you are on the edge: one extra unnecessary loop might be the cause of the 'Time Limit Exceeded' error. In such a case, sometimes writing code in a different language works (e.g. Python). Generally, the Time Limit considerations are built in differently for each language, hence if you are lucky, you will pass over that 'edge' by simply writing it in a different language. (Note that, this should be your last resort, when you know, there can't be a more optimal solution to this question.)
+
+**Diversify**
+
+*Diversify!* Do not put your entire focus on 1 company or 1 profile only. When you have gone through CDC placement process, you will realize that the process is not entirely fair. It has a signficant amount of *randomness* included. Some people may get placed in a better company than they expected, while some may not even get shortlisted in the company they prepared for last 4 momths. It happens. There are tons of applicants, and only a few has to get in. Even if you are among the best, it may happen that you didn't make the cut. So, what is the best way to beat the *randomnesss* factor?
+
+
+Diversify. Have a dream company in your mind, but prepare well for other companies too. Do not stick to just one profile. If you are preparing for Data-Science primarily, do come coding on the side too.
+
 
 ## FAQs
 
