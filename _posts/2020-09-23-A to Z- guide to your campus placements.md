@@ -177,6 +177,11 @@ The most important factor to keep in mind at this point is, *Hope for the best, 
 
 Diversify. Have a dream company in your mind, but prepare well for other companies too. Do not stick to just one profile. If you are preparing for Data-Science primarily, do some coding on the side too.
 
+**CDC Placement is not end of the world**
+
+Consider your CDC Placements as a chance to start your career well, and not as the most important part of your career. This is not JEE. CDC Placements do not have even 1% of impact on your future career compared to what JEE had. This is your first job, first of many more to come. You will definitely want to have a good start to your career, but understand that, if you do not get placed in your dream company or your dream profile, you can always make a switch sometime soon, if you work hard enough. Do not take your campus placement to heart. In 10 years, it won't matter.
+
+----
 
 ## FAQs
 
