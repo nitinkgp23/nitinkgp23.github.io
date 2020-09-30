@@ -37,7 +37,7 @@ The three most important resources for anyone to prepare for a coding profile ar
 
 1. [**Geeks For Geeks**](https://www.geeksforgeeks.org/)
 
-    Go through GeeksForGeeks thoroughly, especially Data Strucutres and Algorithms. Read about linked-lists, stacks and queues, and trees. Each of these topics have a ton of questions listed. Go through some of the questions and their solutions for each topic. You will understand how problems are solved. Do not attempt to solve them on your own, just go through to get an overview of the data strucutre or the algorithm.
+    Go through GeeksForGeeks thoroughly, especially Data Strucutres and Algorithms. Read about linked-lists, stacks and queues, and trees. Each of these topics have a ton of questions listed. Go through some of the questions and their solutions for each topic. You will understand how problems are solved. Do not attempt to solve them on your own, just go through to get an overview of the data structure or the algorithm.
 
     Keep visiting this website whenever you are stuck, or your concept regarding a certain data-strucuture/algorithm isn't clear.
 
@@ -63,7 +63,7 @@ The three most important resources for anyone to prepare for a coding profile ar
     **LeetCode is the best place to find the best solutions to any question**. Just head over to 'Discussion' section of a question, and find the solutions that are voted best. Going through these will help you improve the quality of your code, and the way you approach a problem.
 
 
-    + [Top 200 LeetCode questions](https://nitinkgp23.github.io/2019/09/25/Leetcode/): The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of [all LeetCode questions arranged in order of likes](https://nitinkgp23.github.io/2019/09/25/Leetcode/). More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
+    + [Top 200 LeetCode questions](https://nitinkgp23.github.io/2019/09/25/Leetcode/): The problem with LeetCode questions is you don't know which questions to solve from this collection! For this, I have prepared a list of all LeetCode questions arranged in order of likes. More liked a question is, more popular and more frequently it is asked in an interview. Aim to solve the questions in this order, and reach as far as you can.. (Maybe 200?)
 
 
     + [LeetCode weekly contest](https://leetcode.com/contest/): Once you have a good hold on concepts, and have solved a good number of questions ranging from all topics, you should start to have a feel of what actual tests are like. LeetCode weekly contest is a good way to solve new questions and with the timer running.
@@ -128,7 +128,8 @@ You have approximately 1.5 months to go before you face your interviewer. Consid
 
     **Basic Data-Structures ramp-up**
 
-    + Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a priority-queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can easily be asked in an interview.  
+
+    + Go through the Data Structures from Geeks for Geeks again. Do you remember how to implement QuickSort or a Priority-Queue? The implementations of basic Data-structures or algorithms are rarely used while coding, since you directly use STL library. But, it is important to brush them up, since these can easily be asked in an interview.  
 
     **Geeks For Geeks Interview Questions**
 
@@ -165,16 +166,16 @@ The most important factor to keep in mind at this point is, *Hope for the best, 
 
 + Do not copy code from your friends or directly from other websites like Geeks for Geeks. Some companies have a very strict policy against plagiarism, and they will outright reject you if they find your code plagiarized.
 
-+ Whether you can use STL or not in the coding round varies between company to company. 90% of the companies allow you to use STL, but compilers provided by some other do not allow you to do so. (In our year, Microsoft and Google were among those.) Hence, before placement tests begin, go back to the basics, and understand how to take input from console, difference between C-style and C++ strings or how to use pointers (and not references!.
++ Whether you can use STL or not in the coding round varies between company to company. 90% of the companies allow you to use STL, but compilers provided by some other do not allow you to do so. (In our year, Microsoft and Google were among those.) Hence, before placement tests begin, go back to the basics, and understand how to take input from console, difference between C-style and C++ strings or how to use pointers (and not references!).
 
 + Sometimes, during the test, you will write your most optimal solution to the problem, but still all test cases won't pass. Maybe the company expects a better solution from you or maybe you are on the edge: one extra unnecessary loop might be the cause of the 'Time Limit Exceeded' error. In such a case, sometimes writing code in a different language works (e.g. Python). Generally, the Time Limit considerations are built in differently for each language, hence if you are lucky, you will pass over that 'edge' by simply writing it in a different language. (Note that, this should be your last resort, when you know, there can't be a more optimal solution to this question.)
 
 **Diversify**
 
-*Diversify!* Do not put your entire focus on 1 company or 1 profile only. When you have gone through CDC placement process, you will realize that the process is not entirely fair. It has a signficant amount of *randomness* included. Some people may get placed in a better company than they expected, while some may not even get shortlisted in the company they prepared for last 4 momths. It happens. There are tons of applicants, and only a few has to get in. Even if you are among the best, it may happen that you didn't make the cut. So, what is the best way to beat the *randomnesss* factor?
+*Diversify!* Do not put your entire focus on one company or one profile only. When you have gone through CDC placement process, you will realize that the process is not entirely fair. It has a signficant amount of *randomness* included. Some people may get placed in a better company than they expected, while some may not even get shortlisted in the company they prepared for last 4 momths. It happens. There are tons of applicants, and only a few has to get in. Even if you are among the best, it may happen that you didn't make the cut. So, what is the best way to beat the *randomnesss* factor?
 
 
-Diversify. Have a dream company in your mind, but prepare well for other companies too. Do not stick to just one profile. If you are preparing for Data-Science primarily, do come coding on the side too.
+Diversify. Have a dream company in your mind, but prepare well for other companies too. Do not stick to just one profile. If you are preparing for Data-Science primarily, do some coding on the side too.
 
 
 ## FAQs
