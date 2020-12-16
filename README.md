@@ -2,3 +2,4 @@
 Nitin Choudhary's blog.
 
 Leverages code from  Sam Finlayson and Andrej Karpathy.
+nitin choudhary's blogger
